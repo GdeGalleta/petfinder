@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		EA06CC1627D616E200ACE060 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC1527D616E200ACE060 /* AppDelegate.swift */; };
 		EA06CC1827D616E200ACE060 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC1727D616E200ACE060 /* SceneDelegate.swift */; };
-		EA06CC1A27D616E200ACE060 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC1927D616E200ACE060 /* ViewController.swift */; };
-		EA06CC1D27D616E200ACE060 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA06CC1B27D616E200ACE060 /* Main.storyboard */; };
 		EA06CC1F27D616E700ACE060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA06CC1E27D616E700ACE060 /* Assets.xcassets */; };
 		EA06CC2227D616E700ACE060 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA06CC2027D616E700ACE060 /* LaunchScreen.storyboard */; };
 		EA06CC3727D616E800ACE060 /* PetfinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC3627D616E800ACE060 /* PetfinderUITests.swift */; };
@@ -50,6 +48,21 @@
 		EA06CC8827D6779D00ACE060 /* AnimalListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8627D6779D00ACE060 /* AnimalListCoordinator.swift */; };
 		EA06CC8A27D677F500ACE060 /* AnimalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8927D677F500ACE060 /* AnimalListViewModel.swift */; };
 		EA06CC8B27D677F500ACE060 /* AnimalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8927D677F500ACE060 /* AnimalListViewModel.swift */; };
+		EA06CC8E27D679EF00ACE060 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8D27D679EF00ACE060 /* TabBarController.swift */; };
+		EA06CC8F27D679EF00ACE060 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8D27D679EF00ACE060 /* TabBarController.swift */; };
+		EA06CC9127D67A6D00ACE060 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9027D67A6D00ACE060 /* TabBarCoordinator.swift */; };
+		EA06CC9227D67A6D00ACE060 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9027D67A6D00ACE060 /* TabBarCoordinator.swift */; };
+		EA06CC9527D67D9A00ACE060 /* OrganizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9427D67D9A00ACE060 /* OrganizationsViewController.swift */; };
+		EA06CC9627D67D9A00ACE060 /* OrganizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9427D67D9A00ACE060 /* OrganizationsViewController.swift */; };
+		EA06CC9827D67DA500ACE060 /* OrganizationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9727D67DA500ACE060 /* OrganizationsCoordinator.swift */; };
+		EA06CC9927D67DA500ACE060 /* OrganizationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9727D67DA500ACE060 /* OrganizationsCoordinator.swift */; };
+		EA06CC9B27D67DB200ACE060 /* OrganizationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9A27D67DB200ACE060 /* OrganizationsViewModel.swift */; };
+		EA06CC9C27D67DB200ACE060 /* OrganizationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9A27D67DB200ACE060 /* OrganizationsViewModel.swift */; };
+		EA06CCA027D6809D00ACE060 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA06CCA327D6809D00ACE060 /* Localizable.strings */; };
+		EA06CCA127D6809D00ACE060 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA06CCA327D6809D00ACE060 /* Localizable.strings */; };
+		EA06CCA627D680C700ACE060 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCA527D680C700ACE060 /* String+Localized.swift */; };
+		EA06CCA727D680C700ACE060 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCA527D680C700ACE060 /* String+Localized.swift */; };
+		EA06CCA927D680E600ACE060 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCA827D680E600ACE060 /* ExtensionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +86,6 @@
 		EA06CC1227D616E200ACE060 /* Petfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA06CC1527D616E200ACE060 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA06CC1727D616E200ACE060 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA06CC1927D616E200ACE060 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EA06CC1C27D616E200ACE060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA06CC1E27D616E700ACE060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA06CC2127D616E700ACE060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA06CC2327D616E700ACE060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +114,14 @@
 		EA06CC8327D6777900ACE060 /* AnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
 		EA06CC8627D6779D00ACE060 /* AnimalListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListCoordinator.swift; sourceTree = "<group>"; };
 		EA06CC8927D677F500ACE060 /* AnimalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewModel.swift; sourceTree = "<group>"; };
+		EA06CC8D27D679EF00ACE060 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EA06CC9027D67A6D00ACE060 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		EA06CC9427D67D9A00ACE060 /* OrganizationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsViewController.swift; sourceTree = "<group>"; };
+		EA06CC9727D67DA500ACE060 /* OrganizationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsCoordinator.swift; sourceTree = "<group>"; };
+		EA06CC9A27D67DB200ACE060 /* OrganizationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsViewModel.swift; sourceTree = "<group>"; };
+		EA06CCA227D6809D00ACE060 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EA06CCA527D680C700ACE060 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		EA06CCA827D680E600ACE060 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,14 +175,14 @@
 			children = (
 				EA06CC8127D6770F00ACE060 /* Feature */,
 				EA06CC5A27D61F4800ACE060 /* Petfinder */,
+				EA06CCA427D680AF00ACE060 /* Extension */,
 				EA06CC4527D6179400ACE060 /* Core */,
 				EA06CC1527D616E200ACE060 /* AppDelegate.swift */,
 				EA06CC1727D616E200ACE060 /* SceneDelegate.swift */,
-				EA06CC1927D616E200ACE060 /* ViewController.swift */,
-				EA06CC1B27D616E200ACE060 /* Main.storyboard */,
 				EA06CC1E27D616E700ACE060 /* Assets.xcassets */,
 				EA06CC2027D616E700ACE060 /* LaunchScreen.storyboard */,
 				EA06CC2327D616E700ACE060 /* Info.plist */,
+				EA06CCA327D6809D00ACE060 /* Localizable.strings */,
 			);
 			path = Petfinder;
 			sourceTree = "<group>";
@@ -175,6 +194,7 @@
 				EA06CC5627D618AE00ACE060 /* TestsConstants.swift */,
 				EA06CC5027D6184400ACE060 /* ApiProviderTests.swift */,
 				EA06CC6D27D66A7200ACE060 /* PetfinderApiProviderTests.swift */,
+				EA06CCA827D680E600ACE060 /* ExtensionTests.swift */,
 			);
 			path = PetfinderTests;
 			sourceTree = "<group>";
@@ -266,7 +286,9 @@
 		EA06CC8127D6770F00ACE060 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				EA06CC8C27D679CF00ACE060 /* TabBar */,
 				EA06CC8227D6776000ACE060 /* AnimalList */,
+				EA06CC9327D67D8000ACE060 /* Organizations */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -274,11 +296,38 @@
 		EA06CC8227D6776000ACE060 /* AnimalList */ = {
 			isa = PBXGroup;
 			children = (
-				EA06CC8327D6777900ACE060 /* AnimalListViewController.swift */,
 				EA06CC8627D6779D00ACE060 /* AnimalListCoordinator.swift */,
+				EA06CC8327D6777900ACE060 /* AnimalListViewController.swift */,
 				EA06CC8927D677F500ACE060 /* AnimalListViewModel.swift */,
 			);
 			path = AnimalList;
+			sourceTree = "<group>";
+		};
+		EA06CC8C27D679CF00ACE060 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CC9027D67A6D00ACE060 /* TabBarCoordinator.swift */,
+				EA06CC8D27D679EF00ACE060 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		EA06CC9327D67D8000ACE060 /* Organizations */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CC9727D67DA500ACE060 /* OrganizationsCoordinator.swift */,
+				EA06CC9427D67D9A00ACE060 /* OrganizationsViewController.swift */,
+				EA06CC9A27D67DB200ACE060 /* OrganizationsViewModel.swift */,
+			);
+			path = Organizations;
+			sourceTree = "<group>";
+		};
+		EA06CCA427D680AF00ACE060 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CCA527D680C700ACE060 /* String+Localized.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,8 +436,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA06CC2227D616E700ACE060 /* LaunchScreen.storyboard in Resources */,
+				EA06CCA027D6809D00ACE060 /* Localizable.strings in Resources */,
 				EA06CC1F27D616E700ACE060 /* Assets.xcassets in Resources */,
-				EA06CC1D27D616E200ACE060 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA06CC7027D66DCE00ACE060 /* animals.json in Resources */,
+				EA06CCA127D6809D00ACE060 /* Localizable.strings in Resources */,
 				EA06CC6227D62F5C00ACE060 /* token.json in Resources */,
 				EA06CC5927D618DC00ACE060 /* sample.json in Resources */,
 			);
@@ -417,21 +467,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA06CC5F27D629EE00ACE060 /* PetfinderApiResource.swift in Sources */,
-				EA06CC1A27D616E200ACE060 /* ViewController.swift in Sources */,
 				EA06CC4827D617CC00ACE060 /* ApiProvider.swift in Sources */,
+				EA06CC8E27D679EF00ACE060 /* TabBarController.swift in Sources */,
 				EA06CC6427D65AA800ACE060 /* PetfinderApiProvider.swift in Sources */,
 				EA06CC6B27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */,
 				EA06CC7427D671DD00ACE060 /* ApiKeys.swift in Sources */,
 				EA06CC6827D6683400ACE060 /* PetfinderAnimalsDto.swift in Sources */,
 				EA06CC8427D6777900ACE060 /* AnimalListViewController.swift in Sources */,
 				EA06CC8727D6779D00ACE060 /* AnimalListCoordinator.swift in Sources */,
+				EA06CC9127D67A6D00ACE060 /* TabBarCoordinator.swift in Sources */,
 				EA06CC7927D676BC00ACE060 /* StartCoordinator.swift in Sources */,
 				EA06CC7F27D676F000ACE060 /* FlowCoordinator.swift in Sources */,
 				EA06CC1627D616E200ACE060 /* AppDelegate.swift in Sources */,
+				EA06CC9827D67DA500ACE060 /* OrganizationsCoordinator.swift in Sources */,
 				EA06CC4B27D617E800ACE060 /* ApiResource.swift in Sources */,
+				EA06CC9527D67D9A00ACE060 /* OrganizationsViewController.swift in Sources */,
 				EA06CC7C27D676D100ACE060 /* MainCoordinator.swift in Sources */,
 				EA06CC1827D616E200ACE060 /* SceneDelegate.swift in Sources */,
+				EA06CC9B27D67DB200ACE060 /* OrganizationsViewModel.swift in Sources */,
 				EA06CC8A27D677F500ACE060 /* AnimalListViewModel.swift in Sources */,
+				EA06CCA627D680C700ACE060 /* String+Localized.swift in Sources */,
 				EA06CC4E27D617FC00ACE060 /* ApiError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,9 +498,11 @@
 				EA06CC6027D629EE00ACE060 /* PetfinderApiResource.swift in Sources */,
 				EA06CC5527D6188300ACE060 /* URLProtocolMock.swift in Sources */,
 				EA06CC7527D671DD00ACE060 /* ApiKeys.swift in Sources */,
+				EA06CC9C27D67DB200ACE060 /* OrganizationsViewModel.swift in Sources */,
 				EA06CC4C27D617E800ACE060 /* ApiResource.swift in Sources */,
 				EA06CC6527D65AA900ACE060 /* PetfinderApiProvider.swift in Sources */,
 				EA06CC7A27D676BC00ACE060 /* StartCoordinator.swift in Sources */,
+				EA06CCA927D680E600ACE060 /* ExtensionTests.swift in Sources */,
 				EA06CC8827D6779D00ACE060 /* AnimalListCoordinator.swift in Sources */,
 				EA06CC8527D6777900ACE060 /* AnimalListViewController.swift in Sources */,
 				EA06CC6C27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */,
@@ -453,10 +510,15 @@
 				EA06CC6E27D66A7200ACE060 /* PetfinderApiProviderTests.swift in Sources */,
 				EA06CC5127D6184400ACE060 /* ApiProviderTests.swift in Sources */,
 				EA06CC4927D617CC00ACE060 /* ApiProvider.swift in Sources */,
+				EA06CCA727D680C700ACE060 /* String+Localized.swift in Sources */,
+				EA06CC8F27D679EF00ACE060 /* TabBarController.swift in Sources */,
 				EA06CC4F27D617FC00ACE060 /* ApiError.swift in Sources */,
 				EA06CC8B27D677F500ACE060 /* AnimalListViewModel.swift in Sources */,
 				EA06CC8027D676F000ACE060 /* FlowCoordinator.swift in Sources */,
+				EA06CC9927D67DA500ACE060 /* OrganizationsCoordinator.swift in Sources */,
+				EA06CC9227D67A6D00ACE060 /* TabBarCoordinator.swift in Sources */,
 				EA06CC5727D618AE00ACE060 /* TestsConstants.swift in Sources */,
+				EA06CC9627D67D9A00ACE060 /* OrganizationsViewController.swift in Sources */,
 				EA06CC7D27D676D100ACE060 /* MainCoordinator.swift in Sources */,
 				EA06CC7227D66F2200ACE060 /* PetfinderApiProviderMock.swift in Sources */,
 			);
@@ -486,20 +548,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EA06CC1B27D616E200ACE060 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA06CC1C27D616E200ACE060 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA06CC2027D616E700ACE060 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EA06CC2127D616E700ACE060 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EA06CCA327D6809D00ACE060 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA06CCA227D6809D00ACE060 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -633,7 +695,6 @@
 				INFOPLIST_FILE = Petfinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -663,7 +724,6 @@
 				INFOPLIST_FILE = Petfinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

@@ -1,5 +1,5 @@
 //
-//  AnimalListViewController.swift
+//  OrganizationsViewController.swift
 //  Petfinder
 //
 //  Created by Dimitri Sopov on 7/3/22.
@@ -8,16 +8,16 @@
 import UIKit
 import Combine
 
-public final class AnimalListViewController: UIViewController {
+public final class OrganizationsViewController: UIViewController {
     // MARK: - Properties
     private var cancellables = Set<AnyCancellable>()
 
-    private let viewModel: AnimalListViewModelType
-    private let coordinator: AnimalListCoordinatorType?
+    private let viewModel: OrganizationsViewModelType
+    private let coordinator: OrganizationsCoordinatorType?
 
     // MARK: - Initializer
-    init(viewModel: AnimalListViewModelType = AnimalListViewModel(),
-         coordinator: AnimalListCoordinatorType? = nil) {
+    init(viewModel: OrganizationsViewModelType = OrganizationsViewModel(),
+         coordinator: OrganizationsCoordinatorType? = nil) {
         self.viewModel = viewModel
         self.coordinator = coordinator
         super.init(nibName: nil, bundle: nil)
@@ -30,6 +30,6 @@ public final class AnimalListViewController: UIViewController {
     // MARK: - Lifecycle
     public override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        view.backgroundColor = .cyan
     }
 }

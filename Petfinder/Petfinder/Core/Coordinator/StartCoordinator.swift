@@ -15,7 +15,7 @@ public final class StartCoordinator: FlowCoordinator {
     }
 
     public func start(animated: Bool = true) {
-        let startCoordinator = AnimalListCoordinator(navigationController: navigationController)
+        let startCoordinator = TabBarCoordinator(navigationController: navigationController)
         coordinate(to: startCoordinator, animated: animated)
     }
 }
