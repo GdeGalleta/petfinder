@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MapKit
 import Combine
 
 public final class OrganizationsViewController: UIViewController {
@@ -14,6 +15,19 @@ public final class OrganizationsViewController: UIViewController {
 
     private let viewModel: OrganizationsViewModelType
     private let coordinator: OrganizationsCoordinatorType?
+
+    private let coordScale = 20000.0
+    private let coordCenter = CLLocationCoordinate2D(latitude: 40.778532, longitude: -73.957451)
+    private lazy var coordRegion = MKCoordinateRegion(center: self.coordCenter, latitudinalMeters: coordScale, longitudinalMeters: coordScale)
+    private lazy var viewMap: MKMapView = {
+        let map = MKMapView()
+        map.translatesAutoresizingMaskIntoConstraints = false
+        map.mapType = MKMapType.standard
+        map.isZoomEnabled = true
+        map.isScrollEnabled = true
+        map.setRegion(self.coordRegion, animated: false)
+        return map
+    }()
 
     // MARK: - Initializer
     init(viewModel: OrganizationsViewModelType = OrganizationsViewModel(),
@@ -30,6 +44,35 @@ public final class OrganizationsViewController: UIViewController {
     // MARK: - Lifecycle
     public override func viewDidLoad() {
         super.viewDidLoad()
+        setupLayout()
+        setupBinding()
+        fetchData()
+    }
+}
+
+extension OrganizationsViewController {
+    private func setupLayout() {
+        title = "kOrganizations".localized
+
         view.backgroundColor = .cyan
+
+        view.addSubview(viewMap)
+
+        let safeAreaLayout = view.safeAreaLayoutGuide
+
+        NSLayoutConstraint.activate([
+            viewMap.topAnchor.constraint(equalTo: safeAreaLayout.topAnchor),
+            viewMap.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            viewMap.leadingAnchor.constraint(equalTo: safeAreaLayout.leadingAnchor),
+            viewMap.trailingAnchor.constraint(equalTo: safeAreaLayout.trailingAnchor)
+        ])
+    }
+
+    private func setupBinding() {
+
+    }
+
+    private func fetchData() {
+
     }
 }

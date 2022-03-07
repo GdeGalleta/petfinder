@@ -30,6 +30,26 @@ public final class AnimalListViewController: UIViewController {
     // MARK: - Lifecycle
     public override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        setupLayout()
+        setupBinding()
+        fetchData()
+    }
+}
+
+extension AnimalListViewController {
+    private func setupLayout() {
+        title = "kAnimals".localized
+
+        view.backgroundColor = .cyan
+
+        let safeAreaLayout = view.safeAreaLayoutGuide
+    }
+
+    private func setupBinding() {
+
+    }
+
+    private func fetchData() {
+
     }
 }
