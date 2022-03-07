@@ -38,6 +38,18 @@
 		EA06CC7227D66F2200ACE060 /* PetfinderApiProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7127D66F2200ACE060 /* PetfinderApiProviderMock.swift */; };
 		EA06CC7427D671DD00ACE060 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7327D671DD00ACE060 /* ApiKeys.swift */; };
 		EA06CC7527D671DD00ACE060 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7327D671DD00ACE060 /* ApiKeys.swift */; };
+		EA06CC7927D676BC00ACE060 /* StartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7827D676BC00ACE060 /* StartCoordinator.swift */; };
+		EA06CC7A27D676BC00ACE060 /* StartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7827D676BC00ACE060 /* StartCoordinator.swift */; };
+		EA06CC7C27D676D100ACE060 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7B27D676D100ACE060 /* MainCoordinator.swift */; };
+		EA06CC7D27D676D100ACE060 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7B27D676D100ACE060 /* MainCoordinator.swift */; };
+		EA06CC7F27D676F000ACE060 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7E27D676F000ACE060 /* FlowCoordinator.swift */; };
+		EA06CC8027D676F000ACE060 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7E27D676F000ACE060 /* FlowCoordinator.swift */; };
+		EA06CC8427D6777900ACE060 /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8327D6777900ACE060 /* AnimalListViewController.swift */; };
+		EA06CC8527D6777900ACE060 /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8327D6777900ACE060 /* AnimalListViewController.swift */; };
+		EA06CC8727D6779D00ACE060 /* AnimalListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8627D6779D00ACE060 /* AnimalListCoordinator.swift */; };
+		EA06CC8827D6779D00ACE060 /* AnimalListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8627D6779D00ACE060 /* AnimalListCoordinator.swift */; };
+		EA06CC8A27D677F500ACE060 /* AnimalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8927D677F500ACE060 /* AnimalListViewModel.swift */; };
+		EA06CC8B27D677F500ACE060 /* AnimalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8927D677F500ACE060 /* AnimalListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +97,12 @@
 		EA06CC6F27D66DCD00ACE060 /* animals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
 		EA06CC7127D66F2200ACE060 /* PetfinderApiProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderApiProviderMock.swift; sourceTree = "<group>"; };
 		EA06CC7327D671DD00ACE060 /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		EA06CC7827D676BC00ACE060 /* StartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCoordinator.swift; sourceTree = "<group>"; };
+		EA06CC7B27D676D100ACE060 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		EA06CC7E27D676F000ACE060 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		EA06CC8327D6777900ACE060 /* AnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
+		EA06CC8627D6779D00ACE060 /* AnimalListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListCoordinator.swift; sourceTree = "<group>"; };
+		EA06CC8927D677F500ACE060 /* AnimalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +154,7 @@
 		EA06CC1427D616E200ACE060 /* Petfinder */ = {
 			isa = PBXGroup;
 			children = (
+				EA06CC8127D6770F00ACE060 /* Feature */,
 				EA06CC5A27D61F4800ACE060 /* Petfinder */,
 				EA06CC4527D6179400ACE060 /* Core */,
 				EA06CC1527D616E200ACE060 /* AppDelegate.swift */,
@@ -171,6 +190,7 @@
 		EA06CC4527D6179400ACE060 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				EA06CC7727D6769A00ACE060 /* Coordinator */,
 				EA06CC4627D617A200ACE060 /* Communication */,
 			);
 			path = Core;
@@ -209,9 +229,8 @@
 		EA06CC5A27D61F4800ACE060 /* Petfinder */ = {
 			isa = PBXGroup;
 			children = (
+				EA06CC7627D6761D00ACE060 /* Communication */,
 				EA06CC6627D6681D00ACE060 /* Model */,
-				EA06CC5E27D629EE00ACE060 /* PetfinderApiResource.swift */,
-				EA06CC6327D65AA800ACE060 /* PetfinderApiProvider.swift */,
 			);
 			path = Petfinder;
 			sourceTree = "<group>";
@@ -223,6 +242,43 @@
 				EA06CC6A27D6698900ACE060 /* PetfinderOAuthDto.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EA06CC7627D6761D00ACE060 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CC5E27D629EE00ACE060 /* PetfinderApiResource.swift */,
+				EA06CC6327D65AA800ACE060 /* PetfinderApiProvider.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		EA06CC7727D6769A00ACE060 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CC7E27D676F000ACE060 /* FlowCoordinator.swift */,
+				EA06CC7B27D676D100ACE060 /* MainCoordinator.swift */,
+				EA06CC7827D676BC00ACE060 /* StartCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EA06CC8127D6770F00ACE060 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CC8227D6776000ACE060 /* AnimalList */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		EA06CC8227D6776000ACE060 /* AnimalList */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CC8327D6777900ACE060 /* AnimalListViewController.swift */,
+				EA06CC8627D6779D00ACE060 /* AnimalListCoordinator.swift */,
+				EA06CC8927D677F500ACE060 /* AnimalListViewModel.swift */,
+			);
+			path = AnimalList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,9 +423,15 @@
 				EA06CC6B27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */,
 				EA06CC7427D671DD00ACE060 /* ApiKeys.swift in Sources */,
 				EA06CC6827D6683400ACE060 /* PetfinderAnimalsDto.swift in Sources */,
+				EA06CC8427D6777900ACE060 /* AnimalListViewController.swift in Sources */,
+				EA06CC8727D6779D00ACE060 /* AnimalListCoordinator.swift in Sources */,
+				EA06CC7927D676BC00ACE060 /* StartCoordinator.swift in Sources */,
+				EA06CC7F27D676F000ACE060 /* FlowCoordinator.swift in Sources */,
 				EA06CC1627D616E200ACE060 /* AppDelegate.swift in Sources */,
 				EA06CC4B27D617E800ACE060 /* ApiResource.swift in Sources */,
+				EA06CC7C27D676D100ACE060 /* MainCoordinator.swift in Sources */,
 				EA06CC1827D616E200ACE060 /* SceneDelegate.swift in Sources */,
+				EA06CC8A27D677F500ACE060 /* AnimalListViewModel.swift in Sources */,
 				EA06CC4E27D617FC00ACE060 /* ApiError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,13 +445,19 @@
 				EA06CC7527D671DD00ACE060 /* ApiKeys.swift in Sources */,
 				EA06CC4C27D617E800ACE060 /* ApiResource.swift in Sources */,
 				EA06CC6527D65AA900ACE060 /* PetfinderApiProvider.swift in Sources */,
+				EA06CC7A27D676BC00ACE060 /* StartCoordinator.swift in Sources */,
+				EA06CC8827D6779D00ACE060 /* AnimalListCoordinator.swift in Sources */,
+				EA06CC8527D6777900ACE060 /* AnimalListViewController.swift in Sources */,
 				EA06CC6C27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */,
 				EA06CC6927D6683400ACE060 /* PetfinderAnimalsDto.swift in Sources */,
 				EA06CC6E27D66A7200ACE060 /* PetfinderApiProviderTests.swift in Sources */,
 				EA06CC5127D6184400ACE060 /* ApiProviderTests.swift in Sources */,
 				EA06CC4927D617CC00ACE060 /* ApiProvider.swift in Sources */,
 				EA06CC4F27D617FC00ACE060 /* ApiError.swift in Sources */,
+				EA06CC8B27D677F500ACE060 /* AnimalListViewModel.swift in Sources */,
+				EA06CC8027D676F000ACE060 /* FlowCoordinator.swift in Sources */,
 				EA06CC5727D618AE00ACE060 /* TestsConstants.swift in Sources */,
+				EA06CC7D27D676D100ACE060 /* MainCoordinator.swift in Sources */,
 				EA06CC7227D66F2200ACE060 /* PetfinderApiProviderMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
