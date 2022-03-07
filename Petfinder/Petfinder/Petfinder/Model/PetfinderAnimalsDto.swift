@@ -15,13 +15,13 @@ public struct PetfinderAnimalsDto: Codable {
 
 // MARK: - Animal
 public struct Animal: Codable {
-    let id: Int?
+    let identifier: Int?
     let organizationID: String?
     let url: String?
-    let type, species: String?
+    let animalType, species: String?
     let breeds: Breeds?
     let colors: Colors?
-    let age, gender, size, coat: String?
+    let age, gender, animalSize, coat: String?
     let name, animalDescription: String?
     let photos: [Photo]?
     let videos: [Video]?
@@ -35,9 +35,11 @@ public struct Animal: Codable {
     let links: AnimalLinks?
 
     enum CodingKeys: String, CodingKey {
-        case id
+        case identifier = "id"
         case organizationID = "organization_id"
-        case url, type, species, breeds, colors, age, gender, size, coat, name
+        case url, species, breeds, colors, age, gender, coat, name
+        case animalSize = "size"
+        case animalType = "type"
         case animalDescription = "description"
         case photos, videos, status, attributes, environment, tags, contact
         case publishedAt = "published_at"

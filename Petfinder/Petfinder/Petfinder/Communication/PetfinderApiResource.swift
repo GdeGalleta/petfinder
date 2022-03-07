@@ -39,8 +39,8 @@ public final class PetfinderApiResource<T: Decodable>: ApiResource<T> {
         return resource
     }
 
-    public class func animals() -> PetfinderApiResource<PetfinderAnimalsDto> {
-        let queryParameters: [String: Any] = [:]
+    public class func animals(query: AnimalsQuery? = nil) -> PetfinderApiResource<PetfinderAnimalsDto> {
+        let queryParameters = query?.dictionary ?? [:]
         let resource = PetfinderApiResource<PetfinderAnimalsDto>(
             httpMethod: .GET,
             endpoint: .animals,

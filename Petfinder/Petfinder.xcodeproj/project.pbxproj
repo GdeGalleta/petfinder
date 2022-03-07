@@ -63,6 +63,16 @@
 		EA06CCA627D680C700ACE060 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCA527D680C700ACE060 /* String+Localized.swift */; };
 		EA06CCA727D680C700ACE060 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCA527D680C700ACE060 /* String+Localized.swift */; };
 		EA06CCA927D680E600ACE060 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCA827D680E600ACE060 /* ExtensionTests.swift */; };
+		EA06CCAC27D68B9000ACE060 /* AnimalListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCAB27D68B9000ACE060 /* AnimalListModel.swift */; };
+		EA06CCAD27D68B9000ACE060 /* AnimalListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCAB27D68B9000ACE060 /* AnimalListModel.swift */; };
+		EA06CCB027D68D0D00ACE060 /* AnimalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCAF27D68D0D00ACE060 /* AnimalListCell.swift */; };
+		EA06CCB127D68D0D00ACE060 /* AnimalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCAF27D68D0D00ACE060 /* AnimalListCell.swift */; };
+		EA06CCB427D68D9F00ACE060 /* PetfinderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB327D68D9F00ACE060 /* PetfinderImageView.swift */; };
+		EA06CCB527D68D9F00ACE060 /* PetfinderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB327D68D9F00ACE060 /* PetfinderImageView.swift */; };
+		EA06CCB727D690B500ACE060 /* AnimalsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB627D690B500ACE060 /* AnimalsQuery.swift */; };
+		EA06CCB827D690B500ACE060 /* AnimalsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB627D690B500ACE060 /* AnimalsQuery.swift */; };
+		EA06CCBA27D6992300ACE060 /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB927D6992300ACE060 /* Encodable+JSON.swift */; };
+		EA06CCBB27D6992300ACE060 /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB927D6992300ACE060 /* Encodable+JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +132,11 @@
 		EA06CCA227D6809D00ACE060 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EA06CCA527D680C700ACE060 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		EA06CCA827D680E600ACE060 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		EA06CCAB27D68B9000ACE060 /* AnimalListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListModel.swift; sourceTree = "<group>"; };
+		EA06CCAF27D68D0D00ACE060 /* AnimalListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListCell.swift; sourceTree = "<group>"; };
+		EA06CCB327D68D9F00ACE060 /* PetfinderImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderImageView.swift; sourceTree = "<group>"; };
+		EA06CCB627D690B500ACE060 /* AnimalsQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsQuery.swift; sourceTree = "<group>"; };
+		EA06CCB927D6992300ACE060 /* Encodable+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+JSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +264,7 @@
 		EA06CC5A27D61F4800ACE060 /* Petfinder */ = {
 			isa = PBXGroup;
 			children = (
+				EA06CCB227D68D8700ACE060 /* Component */,
 				EA06CC7627D6761D00ACE060 /* Communication */,
 				EA06CC6627D6681D00ACE060 /* Model */,
 			);
@@ -260,6 +276,7 @@
 			children = (
 				EA06CC6727D6683400ACE060 /* PetfinderAnimalsDto.swift */,
 				EA06CC6A27D6698900ACE060 /* PetfinderOAuthDto.swift */,
+				EA06CCB627D690B500ACE060 /* AnimalsQuery.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -296,6 +313,8 @@
 		EA06CC8227D6776000ACE060 /* AnimalList */ = {
 			isa = PBXGroup;
 			children = (
+				EA06CCAA27D68B8300ACE060 /* Model */,
+				EA06CCAE27D68CEF00ACE060 /* AnimalListCell */,
 				EA06CC8627D6779D00ACE060 /* AnimalListCoordinator.swift */,
 				EA06CC8327D6777900ACE060 /* AnimalListViewController.swift */,
 				EA06CC8927D677F500ACE060 /* AnimalListViewModel.swift */,
@@ -326,8 +345,33 @@
 			isa = PBXGroup;
 			children = (
 				EA06CCA527D680C700ACE060 /* String+Localized.swift */,
+				EA06CCB927D6992300ACE060 /* Encodable+JSON.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		EA06CCAA27D68B8300ACE060 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CCAB27D68B9000ACE060 /* AnimalListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA06CCAE27D68CEF00ACE060 /* AnimalListCell */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CCAF27D68D0D00ACE060 /* AnimalListCell.swift */,
+			);
+			path = AnimalListCell;
+			sourceTree = "<group>";
+		};
+		EA06CCB227D68D8700ACE060 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CCB327D68D9F00ACE060 /* PetfinderImageView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,7 +512,9 @@
 			files = (
 				EA06CC5F27D629EE00ACE060 /* PetfinderApiResource.swift in Sources */,
 				EA06CC4827D617CC00ACE060 /* ApiProvider.swift in Sources */,
+				EA06CCB427D68D9F00ACE060 /* PetfinderImageView.swift in Sources */,
 				EA06CC8E27D679EF00ACE060 /* TabBarController.swift in Sources */,
+				EA06CCB727D690B500ACE060 /* AnimalsQuery.swift in Sources */,
 				EA06CC6427D65AA800ACE060 /* PetfinderApiProvider.swift in Sources */,
 				EA06CC6B27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */,
 				EA06CC7427D671DD00ACE060 /* ApiKeys.swift in Sources */,
@@ -487,7 +533,10 @@
 				EA06CC9B27D67DB200ACE060 /* OrganizationsViewModel.swift in Sources */,
 				EA06CC8A27D677F500ACE060 /* AnimalListViewModel.swift in Sources */,
 				EA06CCA627D680C700ACE060 /* String+Localized.swift in Sources */,
+				EA06CCB027D68D0D00ACE060 /* AnimalListCell.swift in Sources */,
 				EA06CC4E27D617FC00ACE060 /* ApiError.swift in Sources */,
+				EA06CCAC27D68B9000ACE060 /* AnimalListModel.swift in Sources */,
+				EA06CCBA27D6992300ACE060 /* Encodable+JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,10 +546,13 @@
 			files = (
 				EA06CC6027D629EE00ACE060 /* PetfinderApiResource.swift in Sources */,
 				EA06CC5527D6188300ACE060 /* URLProtocolMock.swift in Sources */,
+				EA06CCB827D690B500ACE060 /* AnimalsQuery.swift in Sources */,
+				EA06CCBB27D6992300ACE060 /* Encodable+JSON.swift in Sources */,
 				EA06CC7527D671DD00ACE060 /* ApiKeys.swift in Sources */,
 				EA06CC9C27D67DB200ACE060 /* OrganizationsViewModel.swift in Sources */,
 				EA06CC4C27D617E800ACE060 /* ApiResource.swift in Sources */,
 				EA06CC6527D65AA900ACE060 /* PetfinderApiProvider.swift in Sources */,
+				EA06CCAD27D68B9000ACE060 /* AnimalListModel.swift in Sources */,
 				EA06CC7A27D676BC00ACE060 /* StartCoordinator.swift in Sources */,
 				EA06CCA927D680E600ACE060 /* ExtensionTests.swift in Sources */,
 				EA06CC8827D6779D00ACE060 /* AnimalListCoordinator.swift in Sources */,
@@ -508,6 +560,7 @@
 				EA06CC6C27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */,
 				EA06CC6927D6683400ACE060 /* PetfinderAnimalsDto.swift in Sources */,
 				EA06CC6E27D66A7200ACE060 /* PetfinderApiProviderTests.swift in Sources */,
+				EA06CCB527D68D9F00ACE060 /* PetfinderImageView.swift in Sources */,
 				EA06CC5127D6184400ACE060 /* ApiProviderTests.swift in Sources */,
 				EA06CC4927D617CC00ACE060 /* ApiProvider.swift in Sources */,
 				EA06CCA727D680C700ACE060 /* String+Localized.swift in Sources */,
@@ -515,6 +568,7 @@
 				EA06CC4F27D617FC00ACE060 /* ApiError.swift in Sources */,
 				EA06CC8B27D677F500ACE060 /* AnimalListViewModel.swift in Sources */,
 				EA06CC8027D676F000ACE060 /* FlowCoordinator.swift in Sources */,
+				EA06CCB127D68D0D00ACE060 /* AnimalListCell.swift in Sources */,
 				EA06CC9927D67DA500ACE060 /* OrganizationsCoordinator.swift in Sources */,
 				EA06CC9227D67A6D00ACE060 /* TabBarCoordinator.swift in Sources */,
 				EA06CC5727D618AE00ACE060 /* TestsConstants.swift in Sources */,
