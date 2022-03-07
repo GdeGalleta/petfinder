@@ -13,9 +13,17 @@
 		EA06CC1D27D616E200ACE060 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA06CC1B27D616E200ACE060 /* Main.storyboard */; };
 		EA06CC1F27D616E700ACE060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA06CC1E27D616E700ACE060 /* Assets.xcassets */; };
 		EA06CC2227D616E700ACE060 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA06CC2027D616E700ACE060 /* LaunchScreen.storyboard */; };
-		EA06CC2D27D616E700ACE060 /* PetfinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC2C27D616E700ACE060 /* PetfinderTests.swift */; };
 		EA06CC3727D616E800ACE060 /* PetfinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC3627D616E800ACE060 /* PetfinderUITests.swift */; };
-		EA06CC3927D616E800ACE060 /* PetfinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC3827D616E800ACE060 /* PetfinderUITestsLaunchTests.swift */; };
+		EA06CC4827D617CC00ACE060 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC4727D617CC00ACE060 /* ApiProvider.swift */; };
+		EA06CC4927D617CC00ACE060 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC4727D617CC00ACE060 /* ApiProvider.swift */; };
+		EA06CC4B27D617E800ACE060 /* ApiResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC4A27D617E800ACE060 /* ApiResource.swift */; };
+		EA06CC4C27D617E800ACE060 /* ApiResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC4A27D617E800ACE060 /* ApiResource.swift */; };
+		EA06CC4E27D617FC00ACE060 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC4D27D617FC00ACE060 /* ApiError.swift */; };
+		EA06CC4F27D617FC00ACE060 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC4D27D617FC00ACE060 /* ApiError.swift */; };
+		EA06CC5127D6184400ACE060 /* ApiProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC5027D6184400ACE060 /* ApiProviderTests.swift */; };
+		EA06CC5527D6188300ACE060 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC5427D6188300ACE060 /* URLProtocolMock.swift */; };
+		EA06CC5727D618AE00ACE060 /* TestsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC5627D618AE00ACE060 /* TestsConstants.swift */; };
+		EA06CC5927D618DC00ACE060 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = EA06CC5827D618DC00ACE060 /* sample.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +53,15 @@
 		EA06CC2127D616E700ACE060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA06CC2327D616E700ACE060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA06CC2827D616E700ACE060 /* PetfinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetfinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA06CC2C27D616E700ACE060 /* PetfinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderTests.swift; sourceTree = "<group>"; };
 		EA06CC3227D616E800ACE060 /* PetfinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetfinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA06CC3627D616E800ACE060 /* PetfinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderUITests.swift; sourceTree = "<group>"; };
-		EA06CC3827D616E800ACE060 /* PetfinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA06CC4727D617CC00ACE060 /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
+		EA06CC4A27D617E800ACE060 /* ApiResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResource.swift; sourceTree = "<group>"; };
+		EA06CC4D27D617FC00ACE060 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		EA06CC5027D6184400ACE060 /* ApiProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProviderTests.swift; sourceTree = "<group>"; };
+		EA06CC5427D6188300ACE060 /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
+		EA06CC5627D618AE00ACE060 /* TestsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsConstants.swift; sourceTree = "<group>"; };
+		EA06CC5827D618DC00ACE060 /* sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +112,7 @@
 		EA06CC1427D616E200ACE060 /* Petfinder */ = {
 			isa = PBXGroup;
 			children = (
+				EA06CC4527D6179400ACE060 /* Core */,
 				EA06CC1527D616E200ACE060 /* AppDelegate.swift */,
 				EA06CC1727D616E200ACE060 /* SceneDelegate.swift */,
 				EA06CC1927D616E200ACE060 /* ViewController.swift */,
@@ -113,7 +127,9 @@
 		EA06CC2B27D616E700ACE060 /* PetfinderTests */ = {
 			isa = PBXGroup;
 			children = (
-				EA06CC2C27D616E700ACE060 /* PetfinderTests.swift */,
+				EA06CC5227D6186400ACE060 /* Mock */,
+				EA06CC5627D618AE00ACE060 /* TestsConstants.swift */,
+				EA06CC5027D6184400ACE060 /* ApiProviderTests.swift */,
 			);
 			path = PetfinderTests;
 			sourceTree = "<group>";
@@ -122,9 +138,43 @@
 			isa = PBXGroup;
 			children = (
 				EA06CC3627D616E800ACE060 /* PetfinderUITests.swift */,
-				EA06CC3827D616E800ACE060 /* PetfinderUITestsLaunchTests.swift */,
 			);
 			path = PetfinderUITests;
+			sourceTree = "<group>";
+		};
+		EA06CC4527D6179400ACE060 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CC4627D617A200ACE060 /* Communication */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EA06CC4627D617A200ACE060 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CC4727D617CC00ACE060 /* ApiProvider.swift */,
+				EA06CC4A27D617E800ACE060 /* ApiResource.swift */,
+				EA06CC4D27D617FC00ACE060 /* ApiError.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		EA06CC5227D6186400ACE060 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CC5327D6186F00ACE060 /* Data */,
+				EA06CC5427D6188300ACE060 /* URLProtocolMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		EA06CC5327D6186F00ACE060 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CC5827D618DC00ACE060 /* sample.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +248,7 @@
 					};
 					EA06CC2727D616E700ACE060 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = EA06CC1127D616E200ACE060;
 					};
 					EA06CC3127D616E800ACE060 = {
@@ -241,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA06CC5927D618DC00ACE060 /* sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA06CC1A27D616E200ACE060 /* ViewController.swift in Sources */,
+				EA06CC4827D617CC00ACE060 /* ApiProvider.swift in Sources */,
 				EA06CC1627D616E200ACE060 /* AppDelegate.swift in Sources */,
+				EA06CC4B27D617E800ACE060 /* ApiResource.swift in Sources */,
 				EA06CC1827D616E200ACE060 /* SceneDelegate.swift in Sources */,
+				EA06CC4E27D617FC00ACE060 /* ApiError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +323,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA06CC2D27D616E700ACE060 /* PetfinderTests.swift in Sources */,
+				EA06CC5527D6188300ACE060 /* URLProtocolMock.swift in Sources */,
+				EA06CC4C27D617E800ACE060 /* ApiResource.swift in Sources */,
+				EA06CC5127D6184400ACE060 /* ApiProviderTests.swift in Sources */,
+				EA06CC4927D617CC00ACE060 /* ApiProvider.swift in Sources */,
+				EA06CC4F27D617FC00ACE060 /* ApiError.swift in Sources */,
+				EA06CC5727D618AE00ACE060 /* TestsConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA06CC3927D616E800ACE060 /* PetfinderUITestsLaunchTests.swift in Sources */,
 				EA06CC3727D616E800ACE060 /* PetfinderUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,15 +556,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K9A73FX66A;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dimitrysopov.PetfinderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Petfinder.app/Petfinder";
@@ -518,11 +584,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K9A73FX66A;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dimitrysopov.PetfinderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
