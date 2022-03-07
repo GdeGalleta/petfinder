@@ -24,6 +24,20 @@
 		EA06CC5527D6188300ACE060 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC5427D6188300ACE060 /* URLProtocolMock.swift */; };
 		EA06CC5727D618AE00ACE060 /* TestsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC5627D618AE00ACE060 /* TestsConstants.swift */; };
 		EA06CC5927D618DC00ACE060 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = EA06CC5827D618DC00ACE060 /* sample.json */; };
+		EA06CC5F27D629EE00ACE060 /* PetfinderApiResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC5E27D629EE00ACE060 /* PetfinderApiResource.swift */; };
+		EA06CC6027D629EE00ACE060 /* PetfinderApiResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC5E27D629EE00ACE060 /* PetfinderApiResource.swift */; };
+		EA06CC6227D62F5C00ACE060 /* token.json in Resources */ = {isa = PBXBuildFile; fileRef = EA06CC6127D62F5C00ACE060 /* token.json */; };
+		EA06CC6427D65AA800ACE060 /* PetfinderApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6327D65AA800ACE060 /* PetfinderApiProvider.swift */; };
+		EA06CC6527D65AA900ACE060 /* PetfinderApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6327D65AA800ACE060 /* PetfinderApiProvider.swift */; };
+		EA06CC6827D6683400ACE060 /* PetfinderAnimalsDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6727D6683400ACE060 /* PetfinderAnimalsDto.swift */; };
+		EA06CC6927D6683400ACE060 /* PetfinderAnimalsDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6727D6683400ACE060 /* PetfinderAnimalsDto.swift */; };
+		EA06CC6B27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6A27D6698900ACE060 /* PetfinderOAuthDto.swift */; };
+		EA06CC6C27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6A27D6698900ACE060 /* PetfinderOAuthDto.swift */; };
+		EA06CC6E27D66A7200ACE060 /* PetfinderApiProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6D27D66A7200ACE060 /* PetfinderApiProviderTests.swift */; };
+		EA06CC7027D66DCE00ACE060 /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = EA06CC6F27D66DCD00ACE060 /* animals.json */; };
+		EA06CC7227D66F2200ACE060 /* PetfinderApiProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7127D66F2200ACE060 /* PetfinderApiProviderMock.swift */; };
+		EA06CC7427D671DD00ACE060 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7327D671DD00ACE060 /* ApiKeys.swift */; };
+		EA06CC7527D671DD00ACE060 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7327D671DD00ACE060 /* ApiKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +76,15 @@
 		EA06CC5427D6188300ACE060 /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 		EA06CC5627D618AE00ACE060 /* TestsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsConstants.swift; sourceTree = "<group>"; };
 		EA06CC5827D618DC00ACE060 /* sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		EA06CC5E27D629EE00ACE060 /* PetfinderApiResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderApiResource.swift; sourceTree = "<group>"; };
+		EA06CC6127D62F5C00ACE060 /* token.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = token.json; sourceTree = "<group>"; };
+		EA06CC6327D65AA800ACE060 /* PetfinderApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderApiProvider.swift; sourceTree = "<group>"; };
+		EA06CC6727D6683400ACE060 /* PetfinderAnimalsDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderAnimalsDto.swift; sourceTree = "<group>"; };
+		EA06CC6A27D6698900ACE060 /* PetfinderOAuthDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderOAuthDto.swift; sourceTree = "<group>"; };
+		EA06CC6D27D66A7200ACE060 /* PetfinderApiProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderApiProviderTests.swift; sourceTree = "<group>"; };
+		EA06CC6F27D66DCD00ACE060 /* animals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
+		EA06CC7127D66F2200ACE060 /* PetfinderApiProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderApiProviderMock.swift; sourceTree = "<group>"; };
+		EA06CC7327D671DD00ACE060 /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +115,7 @@
 		EA06CC0927D616E200ACE060 = {
 			isa = PBXGroup;
 			children = (
+				EA06CC7327D671DD00ACE060 /* ApiKeys.swift */,
 				EA06CC1427D616E200ACE060 /* Petfinder */,
 				EA06CC2B27D616E700ACE060 /* PetfinderTests */,
 				EA06CC3527D616E800ACE060 /* PetfinderUITests */,
@@ -112,6 +136,7 @@
 		EA06CC1427D616E200ACE060 /* Petfinder */ = {
 			isa = PBXGroup;
 			children = (
+				EA06CC5A27D61F4800ACE060 /* Petfinder */,
 				EA06CC4527D6179400ACE060 /* Core */,
 				EA06CC1527D616E200ACE060 /* AppDelegate.swift */,
 				EA06CC1727D616E200ACE060 /* SceneDelegate.swift */,
@@ -130,6 +155,7 @@
 				EA06CC5227D6186400ACE060 /* Mock */,
 				EA06CC5627D618AE00ACE060 /* TestsConstants.swift */,
 				EA06CC5027D6184400ACE060 /* ApiProviderTests.swift */,
+				EA06CC6D27D66A7200ACE060 /* PetfinderApiProviderTests.swift */,
 			);
 			path = PetfinderTests;
 			sourceTree = "<group>";
@@ -165,6 +191,7 @@
 			children = (
 				EA06CC5327D6186F00ACE060 /* Data */,
 				EA06CC5427D6188300ACE060 /* URLProtocolMock.swift */,
+				EA06CC7127D66F2200ACE060 /* PetfinderApiProviderMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -173,8 +200,29 @@
 			isa = PBXGroup;
 			children = (
 				EA06CC5827D618DC00ACE060 /* sample.json */,
+				EA06CC6127D62F5C00ACE060 /* token.json */,
+				EA06CC6F27D66DCD00ACE060 /* animals.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		EA06CC5A27D61F4800ACE060 /* Petfinder */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CC6627D6681D00ACE060 /* Model */,
+				EA06CC5E27D629EE00ACE060 /* PetfinderApiResource.swift */,
+				EA06CC6327D65AA800ACE060 /* PetfinderApiProvider.swift */,
+			);
+			path = Petfinder;
+			sourceTree = "<group>";
+		};
+		EA06CC6627D6681D00ACE060 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CC6727D6683400ACE060 /* PetfinderAnimalsDto.swift */,
+				EA06CC6A27D6698900ACE060 /* PetfinderOAuthDto.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +340,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA06CC7027D66DCE00ACE060 /* animals.json in Resources */,
+				EA06CC6227D62F5C00ACE060 /* token.json in Resources */,
 				EA06CC5927D618DC00ACE060 /* sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,8 +360,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA06CC5F27D629EE00ACE060 /* PetfinderApiResource.swift in Sources */,
 				EA06CC1A27D616E200ACE060 /* ViewController.swift in Sources */,
 				EA06CC4827D617CC00ACE060 /* ApiProvider.swift in Sources */,
+				EA06CC6427D65AA800ACE060 /* PetfinderApiProvider.swift in Sources */,
+				EA06CC6B27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */,
+				EA06CC7427D671DD00ACE060 /* ApiKeys.swift in Sources */,
+				EA06CC6827D6683400ACE060 /* PetfinderAnimalsDto.swift in Sources */,
 				EA06CC1627D616E200ACE060 /* AppDelegate.swift in Sources */,
 				EA06CC4B27D617E800ACE060 /* ApiResource.swift in Sources */,
 				EA06CC1827D616E200ACE060 /* SceneDelegate.swift in Sources */,
@@ -323,12 +378,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA06CC6027D629EE00ACE060 /* PetfinderApiResource.swift in Sources */,
 				EA06CC5527D6188300ACE060 /* URLProtocolMock.swift in Sources */,
+				EA06CC7527D671DD00ACE060 /* ApiKeys.swift in Sources */,
 				EA06CC4C27D617E800ACE060 /* ApiResource.swift in Sources */,
+				EA06CC6527D65AA900ACE060 /* PetfinderApiProvider.swift in Sources */,
+				EA06CC6C27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */,
+				EA06CC6927D6683400ACE060 /* PetfinderAnimalsDto.swift in Sources */,
+				EA06CC6E27D66A7200ACE060 /* PetfinderApiProviderTests.swift in Sources */,
 				EA06CC5127D6184400ACE060 /* ApiProviderTests.swift in Sources */,
 				EA06CC4927D617CC00ACE060 /* ApiProvider.swift in Sources */,
 				EA06CC4F27D617FC00ACE060 /* ApiError.swift in Sources */,
 				EA06CC5727D618AE00ACE060 /* TestsConstants.swift in Sources */,
+				EA06CC7227D66F2200ACE060 /* PetfinderApiProviderMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
