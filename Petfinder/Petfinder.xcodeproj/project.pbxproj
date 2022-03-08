@@ -80,6 +80,8 @@
 		EA06CCC327D7822700ACE060 /* OrganizationsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCC227D7822700ACE060 /* OrganizationsQuery.swift */; };
 		EA06CCC427D7822700ACE060 /* OrganizationsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCC227D7822700ACE060 /* OrganizationsQuery.swift */; };
 		EA06CCC627D7839800ACE060 /* organizations.json in Resources */ = {isa = PBXBuildFile; fileRef = EA06CCC527D7839800ACE060 /* organizations.json */; };
+		EA06CCC927D78C2F00ACE060 /* OrganizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCC827D78C2F00ACE060 /* OrganizationModel.swift */; };
+		EA06CCCA27D78C2F00ACE060 /* OrganizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCC827D78C2F00ACE060 /* OrganizationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +150,7 @@
 		EA06CCBF27D7808D00ACE060 /* PetfinderOrganizationsDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderOrganizationsDto.swift; sourceTree = "<group>"; };
 		EA06CCC227D7822700ACE060 /* OrganizationsQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsQuery.swift; sourceTree = "<group>"; };
 		EA06CCC527D7839800ACE060 /* organizations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = organizations.json; sourceTree = "<group>"; };
+		EA06CCC827D78C2F00ACE060 /* OrganizationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -349,6 +352,7 @@
 		EA06CC9327D67D8000ACE060 /* Organizations */ = {
 			isa = PBXGroup;
 			children = (
+				EA06CCC727D78C1600ACE060 /* Model */,
 				EA06CC9727D67DA500ACE060 /* OrganizationsCoordinator.swift */,
 				EA06CC9427D67D9A00ACE060 /* OrganizationsViewController.swift */,
 				EA06CC9A27D67DB200ACE060 /* OrganizationsViewModel.swift */,
@@ -387,6 +391,14 @@
 				EA06CCB327D68D9F00ACE060 /* PetfinderImageView.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		EA06CCC727D78C1600ACE060 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA06CCC827D78C2F00ACE060 /* OrganizationModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,6 +545,7 @@
 				EA06CC8E27D679EF00ACE060 /* TabBarController.swift in Sources */,
 				EA06CCB727D690B500ACE060 /* AnimalsQuery.swift in Sources */,
 				EA06CC6427D65AA800ACE060 /* PetfinderApiProvider.swift in Sources */,
+				EA06CCC927D78C2F00ACE060 /* OrganizationModel.swift in Sources */,
 				EA06CC6B27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */,
 				EA06CC7427D671DD00ACE060 /* ApiKeys.swift in Sources */,
 				EA06CCC027D7808E00ACE060 /* PetfinderOrganizationsDto.swift in Sources */,
@@ -579,6 +592,7 @@
 				EA06CC6C27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */,
 				EA06CC6927D6683400ACE060 /* PetfinderAnimalsDto.swift in Sources */,
 				EA06CC6E27D66A7200ACE060 /* PetfinderApiProviderTests.swift in Sources */,
+				EA06CCCA27D78C2F00ACE060 /* OrganizationModel.swift in Sources */,
 				EA06CCB527D68D9F00ACE060 /* PetfinderImageView.swift in Sources */,
 				EA06CCBE27D771F000ACE060 /* PetfinderConstants.swift in Sources */,
 				EA06CC5127D6184400ACE060 /* ApiProviderTests.swift in Sources */,

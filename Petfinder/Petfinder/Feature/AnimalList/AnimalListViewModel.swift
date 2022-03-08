@@ -42,7 +42,7 @@ public final class AnimalListViewModel: AnimalListViewModelType {
         self.apiProvider = apiProvider
     }
 
-    public func fetchAnimals(query: AnimalsQuery) {
+    private func fetchAnimals(query: AnimalsQuery) {
         let resource = PetfinderApiResource<PetfinderAnimalsDto>.animals(query: query)
         apiProvider
             .fetch(resource: resource)
@@ -68,7 +68,6 @@ public final class AnimalListViewModel: AnimalListViewModelType {
                         return nil
                     })
                 }
-
                 return converted
             })
             .sink { [weak self] completion in

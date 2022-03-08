@@ -43,9 +43,9 @@ public final class TabBarCoordinator: FlowCoordinator, TabBarCoordinatorType {
         tabBarController.viewControllers = [animalListNavigationController, organizationsNavigationController]
 
         tabBarController.modalPresentationStyle = .fullScreen
-        navigationController.present(tabBarController, animated: true, completion: nil)
-
-        coordinate(to: animalListCoordinator)
-        coordinate(to: organizationsCoordinator)
+        navigationController.present(tabBarController, animated: false, completion: { [weak self] in
+            self?.coordinate(to: animalListCoordinator, animated: false)
+            self?.coordinate(to: organizationsCoordinator, animated: false)
+        })
     }
 }

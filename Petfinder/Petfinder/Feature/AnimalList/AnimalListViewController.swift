@@ -121,10 +121,6 @@ extension AnimalListViewController {
 
 extension AnimalListViewController: UITableViewDelegate {
 
-    public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "kAnimalsFromYou".localized
-    }
-
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
