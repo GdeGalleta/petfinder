@@ -1,0 +1,1073 @@
+{
+    "organizations": [
+        {
+            "id": "NY1136",
+            "name": "Tuff Tails Animal Rescue",
+            "email": "info@tufftails.org",
+            "phone": null,
+            "address": {
+                "address1": "P.O. Box 117",
+                "address2": null,
+                "city": "Levittown",
+                "state": "NY",
+                "postcode": "11756",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/ny/levittown/tuff-tails-animal-rescue-ny1136/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": null,
+            "mission_statement": "Hello!!  Please allow us to introduce ourselves - we are Tuff Tails Animal Rescue - a 100% no kill rescue...",
+            "adoption": {
+                "policy": null,
+                "url": null
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": null,
+                "pinterest": null
+            },
+            "photos": [
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42597/2/?bust=1511994780&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42597/2/?bust=1511994780&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42597/2/?bust=1511994780&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42597/2/?bust=1511994780"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42597/1/?bust=1499456404&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42597/1/?bust=1499456404&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42597/1/?bust=1499456404&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42597/1/?bust=1499456404"
+                }
+            ],
+            "distance": 37.5771,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/ny1136"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=ny1136"
+                }
+            }
+        },
+        {
+            "id": "NY527",
+            "name": "Town of Oyster Bay Animal Shelter",
+            "email": "tobayshelter@oysterbay-ny.gov",
+            "phone": "516-677-5784    ",
+            "address": {
+                "address1": "150 Miller  Place",
+                "address2": null,
+                "city": "Syosset",
+                "state": "NY",
+                "postcode": "11791",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/ny/syosset/town-of-oyster-bay-animal-shelter-ny527/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": null,
+            "mission_statement": null,
+            "adoption": {
+                "policy": null,
+                "url": null
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": null,
+                "pinterest": null
+            },
+            "photos": [],
+            "distance": 38.5757,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/ny527"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=ny527"
+                }
+            }
+        },
+        {
+            "id": "NJ729",
+            "name": "Happily Efur After",
+            "email": "HappilyEfurAfter@yahoo.com",
+            "phone": " ",
+            "address": {
+                "address1": "P.O. Box 264",
+                "address2": null,
+                "city": "Belleville",
+                "state": "NJ",
+                "postcode": "07109",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/nj/belleville/happily-efur-after-nj729/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": null,
+            "mission_statement": null,
+            "adoption": {
+                "policy": null,
+                "url": null
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": null,
+                "pinterest": null
+            },
+            "photos": [
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42367/2/?bust=1520200799&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42367/2/?bust=1520200799&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42367/2/?bust=1520200799&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42367/2/?bust=1520200799"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42367/1/?bust=1509407717&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42367/1/?bust=1509407717&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42367/1/?bust=1509407717&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/42367/1/?bust=1509407717"
+                }
+            ],
+            "distance": 17.4159,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/nj729"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=nj729"
+                }
+            }
+        },
+        {
+            "id": "NJ937",
+            "name": "Lawns to Laps Cat Rescue",
+            "email": "LawnsToLaps@gmail.com",
+            "phone": "(201) 949-8566",
+            "address": {
+                "address1": null,
+                "address2": null,
+                "city": "Kearny",
+                "state": "NJ",
+                "postcode": "07032",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/nj/kearny/lawns-to-laps-cat-rescue-nj937/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": "https://lawnstolaps.org",
+            "mission_statement": "The mission of Lawns to Laps Cat Rescue is to decrease the euthanasia rates of cats in municipal shelters in...",
+            "adoption": {
+                "policy": "Adoptions can take place once an application has been approved and a home visit has been made.  For more information,...",
+                "url": null
+            },
+            "social_media": {
+                "facebook": "https://facebook.com/lawnstolaps",
+                "twitter": null,
+                "youtube": null,
+                "instagram": "https://instagram.com/lawnstolaps",
+                "pinterest": null
+            },
+            "photos": [
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/49541/1/?bust=1570046766&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/49541/1/?bust=1570046766&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/49541/1/?bust=1570046766&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/49541/1/?bust=1570046766"
+                }
+            ],
+            "distance": 15.75,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/nj937"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=nj937"
+                }
+            }
+        },
+        {
+            "id": "CT289",
+            "name": "Greenwich Animal Control",
+            "email": null,
+            "phone": "203-622-8299  ",
+            "address": {
+                "address1": "393 North Street",
+                "address2": null,
+                "city": "Greenwich",
+                "state": "CT",
+                "postcode": "06830",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/ct/greenwich/greenwich-animal-control-ct289/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": null,
+            "mission_statement": null,
+            "adoption": {
+                "policy": null,
+                "url": null
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": null,
+                "pinterest": null
+            },
+            "photos": [],
+            "distance": 39.3714,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/ct289"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=ct289"
+                }
+            }
+        },
+        {
+            "id": "NY1004",
+            "name": "Animal Welfare League of Westchester County, Inc.",
+            "email": null,
+            "phone": "(914) 320-5991  ",
+            "address": {
+                "address1": "P.O. Box 276",
+                "address2": null,
+                "city": "White Plains",
+                "state": "NY",
+                "postcode": "10602",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/ny/white-plains/animal-welfare-league-of-westchester-county-inc-ny1004/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": null,
+            "mission_statement": null,
+            "adoption": {
+                "policy": null,
+                "url": null
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": null,
+                "pinterest": null
+            },
+            "photos": [],
+            "distance": 32.7496,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/ny1004"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=ny1004"
+                }
+            }
+        },
+        {
+            "id": "NJ871",
+            "name": "Jersey Tails",
+            "email": "jerseytailscats@gmail.com",
+            "phone": null,
+            "address": {
+                "address1": null,
+                "address2": null,
+                "city": "Jersey City",
+                "state": "NJ",
+                "postcode": "07302",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/nj/jersey-city/jersey-tails-nj871/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": null,
+            "mission_statement": null,
+            "adoption": {
+                "policy": "Adoption Application, home visit, screening and Donation required. $175 each kitten and $150 each Cat over a year old.",
+                "url": null
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": null,
+                "pinterest": null
+            },
+            "photos": [],
+            "distance": 9.9759,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/nj871"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=nj871"
+                }
+            }
+        },
+        {
+            "id": "DE23",
+            "name": "Australian Cattle Dog Rescue Association Inc",
+            "email": "info@acdra.org",
+            "phone": null,
+            "address": {
+                "address1": null,
+                "address2": null,
+                "city": "Hempstead",
+                "state": "NY",
+                "postcode": "11550",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/ny/hempstead/australian-cattle-dog-rescue-association-inc-de23/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": null,
+            "mission_statement": null,
+            "adoption": {
+                "policy": null,
+                "url": null
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": null,
+                "pinterest": null
+            },
+            "photos": [],
+            "distance": 29.6778,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/de23"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=de23"
+                }
+            }
+        },
+        {
+            "id": "ME24",
+            "name": "Australian Cattle Dog Rescue Association",
+            "email": "info@acdra.org",
+            "phone": null,
+            "address": {
+                "address1": null,
+                "address2": null,
+                "city": "Hempstead",
+                "state": "NY",
+                "postcode": "11550",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/ny/hempstead/australian-cattle-dog-rescue-association-me24/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": null,
+            "mission_statement": null,
+            "adoption": {
+                "policy": null,
+                "url": null
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": null,
+                "pinterest": null
+            },
+            "photos": [],
+            "distance": 29.6778,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/me24"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=me24"
+                }
+            }
+        },
+        {
+            "id": "NY190",
+            "name": "P.L.U.T.O. (Pet Lovers United Together as One)",
+            "email": "plutorescue@aol.com",
+            "phone": null,
+            "address": {
+                "address1": "PO Box 140889",
+                "address2": null,
+                "city": "Staten Island",
+                "state": "NY",
+                "postcode": "10314",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/ny/staten-island/p-dot-lu-dot-to-pet-lovers-united-together-as-one-ny190/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": "http://members.petfinder.com/~NY190/",
+            "mission_statement": null,
+            "adoption": {
+                "policy": null,
+                "url": "http://members.petfinder.com/~NY190/pluto%20cat%20adoption%20application%20revised%20121718.pdf"
+            },
+            "social_media": {
+                "facebook": "https://www.facebook.com/P.L.U.T.ORescue/",
+                "twitter": null,
+                "youtube": null,
+                "instagram": "https://www.instagram.com/pluto.rescue/",
+                "pinterest": null
+            },
+            "photos": [
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/34587/1/?bust=1498052192&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/34587/1/?bust=1498052192&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/34587/1/?bust=1498052192&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/34587/1/?bust=1498052192"
+                }
+            ],
+            "distance": 24.8634,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/ny190"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=ny190"
+                }
+            }
+        },
+        {
+            "id": "NJ36",
+            "name": "Passaic Animal Shelter",
+            "email": null,
+            "phone": "(973) 365-5669",
+            "address": {
+                "address1": "13 Benson Court",
+                "address2": null,
+                "city": "Passaic",
+                "state": "NJ",
+                "postcode": "07055",
+                "country": "US"
+            },
+            "hours": {
+                "monday": "8:30am-9:30am / 3pm-4pm / 6pm-8pm",
+                "tuesday": "8:30am-9:30am / 3pm-4pm",
+                "wednesday": "8:30am-9:30am / 3pm-4pm",
+                "thursday": "8:30am-9:30am / 3pm-4pm",
+                "friday": "8:30am-9:30am / 3pm-4pm",
+                "saturday": "12pm-2pm",
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/nj/passaic/passaic-animal-shelter-nj36/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": null,
+            "mission_statement": null,
+            "adoption": {
+                "policy": null,
+                "url": null
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": null,
+                "pinterest": null
+            },
+            "photos": [
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/34014/1/?bust=1505505253&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/34014/1/?bust=1505505253&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/34014/1/?bust=1505505253&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/34014/1/?bust=1505505253"
+                }
+            ],
+            "distance": 17.0048,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/nj36"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=nj36"
+                }
+            }
+        },
+        {
+            "id": "NJ209",
+            "name": "Aunt Marys Dog House",
+            "email": "AuntMarysDogHouse@yahoo.com",
+            "phone": "908-362-1333",
+            "address": {
+                "address1": "PO Box 43596",
+                "address2": null,
+                "city": "Montclair",
+                "state": "NJ",
+                "postcode": "07043",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/nj/montclair/aunt-marys-dog-house-nj209/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": null,
+            "mission_statement": null,
+            "adoption": {
+                "policy": null,
+                "url": null
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": null,
+                "pinterest": null
+            },
+            "photos": [],
+            "distance": 21.7384,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/nj209"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=nj209"
+                }
+            }
+        },
+        {
+            "id": "NY1268",
+            "name": "Adore-a-Bullie Paws and Claws",
+            "email": "adoreabullie@gmail.com",
+            "phone": "  ",
+            "address": {
+                "address1": "P.O Box 191",
+                "address2": null,
+                "city": "Bronx",
+                "state": "NY",
+                "postcode": "10464",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/ny/bronx/adore-a-bullie-paws-and-claws-ny1268/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": null,
+            "mission_statement": "Adore-A-Bullie Paws and Claws was born from the passion of a small group of individual rescuers.  We were overwhelmed with...",
+            "adoption": {
+                "policy": "If you are interested in fostering or adopting one of our animals, the first step is filling out an application.  ...",
+                "url": null
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": null,
+                "pinterest": null
+            },
+            "photos": [
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/45476/2/?bust=1511994842&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/45476/2/?bust=1511994842&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/45476/2/?bust=1511994842&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/45476/2/?bust=1511994842"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/45476/1/?bust=1500916539&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/45476/1/?bust=1500916539&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/45476/1/?bust=1500916539&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/45476/1/?bust=1500916539"
+                }
+            ],
+            "distance": 16.2172,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/ny1268"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=ny1268"
+                }
+            }
+        },
+        {
+            "id": "NY1202",
+            "name": "Best Bullies",
+            "email": "BESTBULLIESNY@AOL.COM",
+            "phone": null,
+            "address": {
+                "address1": null,
+                "address2": null,
+                "city": "Yonkers",
+                "state": "NY",
+                "postcode": "10710",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/ny/yonkers/best-bullies-ny1202/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": "https://www.bestbullies.org/forms",
+            "mission_statement": "Best Bullies is a vocal advocate for all shelter dogs. We work with local shelters and offer training to current...",
+            "adoption": {
+                "policy": null,
+                "url": null
+            },
+            "social_media": {
+                "facebook": "http://www.facebook.com/bestbulliesny",
+                "twitter": "https://twitter.com/bestbulliesny",
+                "youtube": null,
+                "instagram": "http://www.instagram.com/bestbulliesny",
+                "pinterest": null
+            },
+            "photos": [
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/44171/1/?bust=1535462806&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/44171/1/?bust=1535462806&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/44171/1/?bust=1535462806&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/44171/1/?bust=1535462806"
+                }
+            ],
+            "distance": 22.7935,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/ny1202"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=ny1202"
+                }
+            }
+        },
+        {
+            "id": "NY1468",
+            "name": "Valley Cats & Friends Animal Rescue, Inc.",
+            "email": "valleycatsandfriends@gmail.com",
+            "phone": null,
+            "address": {
+                "address1": null,
+                "address2": null,
+                "city": "Valley Stream",
+                "state": "NY",
+                "postcode": "11581",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/ny/valley-stream/valley-cats-and-friends-animal-rescue-inc-ny1468/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": "https://www.valleycatsandfriends.com",
+            "mission_statement": "Valley Cats &amp; Friends, Inc. 501(c)(3) is committed to reducing the number of unwanted, homeless and abandoned cats and kittens...",
+            "adoption": {
+                "policy": null,
+                "url": "https://form.jotform.com/201293589080155"
+            },
+            "social_media": {
+                "facebook": "https://www.facebook.com/Valley-Cats-Friends-Animal-Rescue-Inc-391011808349921/",
+                "twitter": null,
+                "youtube": null,
+                "instagram": "https://instagram.com/valley_cats_and_friends?igshid=28dx921ryfnk",
+                "pinterest": null
+            },
+            "photos": [
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/49524/1/?bust=1569343854&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/49524/1/?bust=1569343854&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/49524/1/?bust=1569343854&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/49524/1/?bust=1569343854"
+                }
+            ],
+            "distance": 25.0677,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/ny1468"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=ny1468"
+                }
+            }
+        },
+        {
+            "id": "NJ25",
+            "name": "Homeless Animal Adoption League",
+            "email": "HAAL06@AOL.com",
+            "phone": "(973) 928-5511",
+            "address": {
+                "address1": "236 Delawanna Ave",
+                "address2": null,
+                "city": "Clifton",
+                "state": "NJ",
+                "postcode": "07014",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": "6:00 - 8:00 PM",
+                "thursday": null,
+                "friday": null,
+                "saturday": "12:00 - 4:00 PM",
+                "sunday": "10:00 AM - 2:00 PM"
+            },
+            "url": "https://www.petfinder.com/member/us/nj/clifton/homeless-animal-adoption-league-nj25/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": "http://HAALNJ.org",
+            "mission_statement": "HAAL’s mission is to provide a bright, clean, and loving environment for cats waiting for a permanent home as well...",
+            "adoption": {
+                "policy": "New Covid 19 Adoption Procedures as of June 26, 2020:\r\nSpecial Announcement June 26, 2020.\r\nHi everyone. It has been...",
+                "url": "https://www.haalnj.org/uploads/7/0/4/4/70448681/haal_adoption_application_copy_2019.pdf"
+            },
+            "social_media": {
+                "facebook": "https://www.facebook.com/haalnj/",
+                "twitter": null,
+                "youtube": null,
+                "instagram": "https://www.instagram.com/haalnj/",
+                "pinterest": null
+            },
+            "photos": [],
+            "distance": 16.5163,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/nj25"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=nj25"
+                }
+            }
+        },
+        {
+            "id": "NY118",
+            "name": "Town of North Hempstead Animal Shelter",
+            "email": "tsc@theshelterconnection.com",
+            "phone": "(516) 869-6311",
+            "address": {
+                "address1": "75 Marino Avenue",
+                "address2": null,
+                "city": "Port Washington",
+                "state": "NY",
+                "postcode": "11050",
+                "country": "US"
+            },
+            "hours": {
+                "monday": "9AM-4PM",
+                "tuesday": "9AM-4PM",
+                "wednesday": "9AM-4PM",
+                "thursday": "9AM-4PM",
+                "friday": "9AM-4PM",
+                "saturday": "10AM-4PM",
+                "sunday": "Closed"
+            },
+            "url": "https://www.petfinder.com/member/us/ny/port-washington/town-of-north-hempstead-animal-shelter-ny118/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": "http://www.theshelterconnection.org",
+            "mission_statement": null,
+            "adoption": {
+                "policy": null,
+                "url": null
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": null,
+                "pinterest": null
+            },
+            "photos": [],
+            "distance": 22.9158,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/ny118"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=ny118"
+                }
+            }
+        },
+        {
+            "id": "NY1354",
+            "name": "Hopewell Rescue",
+            "email": "hopewellrescueadopt@gmail.com",
+            "phone": null,
+            "address": {
+                "address1": null,
+                "address2": null,
+                "city": "New York",
+                "state": "NY",
+                "postcode": "10128",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/ny/new-york/hopewell-rescue-ny1354/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": null,
+            "mission_statement": "Hopewell Rescue is a non-profit organization dedicated to saving the lives of homeless and abandoned animals, taking them off the...",
+            "adoption": {
+                "policy": "Our adoption process ensures that you and the cat(s) are a good match for each other:\r\n\r\n1) Phone call to...",
+                "url": null
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": "https://www.instagram.com/hopewellrescue/",
+                "pinterest": null
+            },
+            "photos": [
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/47252/1/?bust=1511994876&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/47252/1/?bust=1511994876&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/47252/1/?bust=1511994876&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/47252/1/?bust=1511994876"
+                }
+            ],
+            "distance": 0.5716,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/ny1354"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=ny1354"
+                }
+            }
+        },
+        {
+            "id": "NY1188",
+            "name": "Pit Of Our Souls Rescue Inc",
+            "email": "pitofoursoulsrescue@gmail.com",
+            "phone": "(516) 308-6221",
+            "address": {
+                "address1": null,
+                "address2": null,
+                "city": "Levittown",
+                "state": "NY",
+                "postcode": "11756",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/ny/levittown/pit-of-our-souls-rescue-inc-ny1188/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": null,
+            "mission_statement": "We are in urgent need of fosters! With the emails and calls pouring in daily, we are desperately seeking new...",
+            "adoption": {
+                "policy": "We are a non-profit, foster bases rescue group throughout all of Long Island.  \r\n\r\n1. We ask that applications be submitted...",
+                "url": "https://pitofoursoulsrescue.com/our-dogs/adoption-application/"
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": null,
+                "pinterest": null
+            },
+            "photos": [
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/6/?bust=1582561600&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/6/?bust=1582561600&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/6/?bust=1582561600&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/6/?bust=1582561600"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/1/?bust=1511994804&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/1/?bust=1511994804&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/1/?bust=1511994804&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/1/?bust=1511994804"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/2/?bust=1566498030&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/2/?bust=1566498030&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/2/?bust=1566498030&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/2/?bust=1566498030"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/3/?bust=1566498030&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/3/?bust=1566498030&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/3/?bust=1566498030&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/3/?bust=1566498030"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/4/?bust=1566498031&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/4/?bust=1566498031&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/4/?bust=1566498031&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/4/?bust=1566498031"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/5/?bust=1566498031&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/5/?bust=1566498031&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/5/?bust=1566498031&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/43826/5/?bust=1566498031"
+                }
+            ],
+            "distance": 37.5771,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/ny1188"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=ny1188"
+                }
+            }
+        },
+        {
+            "id": "NY962",
+            "name": "Adopt-A-Buddy",
+            "email": "adoptabuddy@gmail.com",
+            "phone": " ",
+            "address": {
+                "address1": null,
+                "address2": null,
+                "city": "Brooklyn",
+                "state": "NY",
+                "postcode": "11229",
+                "country": "US"
+            },
+            "hours": {
+                "monday": null,
+                "tuesday": null,
+                "wednesday": null,
+                "thursday": null,
+                "friday": null,
+                "saturday": null,
+                "sunday": null
+            },
+            "url": "https://www.petfinder.com/member/us/ny/brooklyn/adopt-a-buddy-ny962/?referrer_id=9b62923b-7666-4cfb-9fea-fc5795a0dbd9",
+            "website": null,
+            "mission_statement": null,
+            "adoption": {
+                "policy": null,
+                "url": null
+            },
+            "social_media": {
+                "facebook": null,
+                "twitter": null,
+                "youtube": null,
+                "instagram": null,
+                "pinterest": null
+            },
+            "photos": [],
+            "distance": 19.7575,
+            "_links": {
+                "self": {
+                    "href": "/v2/organizations/ny962"
+                },
+                "animals": {
+                    "href": "/v2/animals?organization=ny962"
+                }
+            }
+        }
+    ],
+    "pagination": {
+        "count_per_page": 20,
+        "total_count": 321,
+        "current_page": 1,
+        "total_pages": 17,
+        "_links": {
+            "next": {
+                "href": "/v2/organizations?location=40.778532,-73.957451&page=2"
+            }
+        }
+    }
+}
