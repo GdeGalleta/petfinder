@@ -85,39 +85,31 @@ extension OrganizationsViewController {
     }
 
     private func setupLocations(organizations: [OrganizationModel]) {
-
         for organization in organizations {
-            let address = organization.address
+            setupLocation(organization: organization)
+        }
+    }
 
-            print(address)
-            
-            DispatchQueue.global().async { [weak self] in
+    private func setupLocation(organization: OrganizationModel) {
+        DispatchQueue.global().async { [weak self] in
+            guard let self = self else { return }
+            CLGeocoder().geocodeAddressString(organization.address, completionHandler: { [weak self] (placemarks, error) -> Void in
                 guard let self = self else { return }
+                guard error == nil else { return }
+                guard let placemark = placemarks?.first else { return }
 
-                let coder = CLGeocoder()
-                coder.geocodeAddressString(address,
-                                              completionHandler: { [weak self] (placemarks, error) -> Void in
-                    guard let self = self else { return }
-                    guard error == nil else {
-                        print("Error: \(error!) \n Address: \(address)")
-                        return
+                if let coordinates = placemark.location?.coordinate {
+                    let annotation = MKPointAnnotation()
+                    annotation.coordinate = coordinates
+                    annotation.title = organization.name
+                    annotation.subtitle = organization.email
+
+                    DispatchQueue.main.async { [weak self] in
+                        guard let self = self else { return }
+                        self.viewMap.addAnnotation(annotation)
                     }
-
-                    guard let placemark = placemarks?.first else { return }
-
-                    if let coordinates = placemark.location?.coordinate {
-                        let annotation = MKPointAnnotation()
-                        annotation.coordinate = coordinates
-                        annotation.title = organization.name
-                        annotation.subtitle = organization.email
-
-                        DispatchQueue.main.async { [weak self] in
-                            guard let self = self else { return }
-                            self.viewMap.addAnnotation(annotation)
-                        }
-                    }
-                })
-            }
+                }
+            })
         }
     }
 }

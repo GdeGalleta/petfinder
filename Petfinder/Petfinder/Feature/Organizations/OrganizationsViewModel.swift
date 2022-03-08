@@ -50,21 +50,18 @@ public final class OrganizationsViewModel: OrganizationsViewModelType {
                         if let identifier = $0.identifier,
                            let name = $0.name,
                            let email = $0.email,
-                           let address1 = $0.address?.address1, !address1.isEmpty,
-                           let address2 = $0.address?.address2, !address2.isEmpty,
                            let country = $0.address?.country, !country.isEmpty,
                            let postcode = $0.address?.postcode, !postcode.isEmpty,
                            let state = $0.address?.state, !state.isEmpty,
                            let city = $0.address?.city, !city.isEmpty {
 
                             var address = ""
-                            address+=" \(address1)"
-                            // address+=" \(address2)"
+                            if let address1 = $0.address?.address1, !address1.isEmpty { address+=" \(address1)" }
+                            else if let address2 = $0.address?.address2, !address2.isEmpty { address+=" \(address2)" }
                             address+=" \(city)"
                             address+=" \(state)"
                             address+=" \(postcode)"
                             address+=" \(country)"
-                            // address+=" United States"
 
                             return OrganizationModel(identifier: identifier,
                                                      name: name,

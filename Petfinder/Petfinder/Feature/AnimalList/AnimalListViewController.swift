@@ -20,6 +20,12 @@ public final class AnimalListViewController: UIViewController {
     private typealias Snapshot = NSDiffableDataSourceSnapshot<Section, AnimalListModel>
     private var dataSource: DataSource!
 
+    private let refreshControl: UIRefreshControl = {
+        let control = UIRefreshControl()
+        control.tintColor = .black
+        return control
+    }()
+
     private lazy var tableView: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
@@ -73,7 +79,11 @@ extension AnimalListViewController {
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
 
+        refreshControl.attributedTitle = NSAttributedString(string: "kRefreshing")
+        refreshControl.addTarget(self, action: #selector(fetchData), for: .valueChanged)
+
         view.addSubview(tableView)
+        tableView.addSubview(refreshControl)
 
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -89,11 +99,12 @@ extension AnimalListViewController {
             .sink { [weak self] _ in
                 guard let self = self else { return }
                 self.setupSnapshot()
+                self.refreshControl.endRefreshing()
             }
             .store(in: &cancellables)
     }
 
-    private func fetchData() {
+    @objc private func fetchData() {
         viewModel.fetchAnimals()
     }
 }
