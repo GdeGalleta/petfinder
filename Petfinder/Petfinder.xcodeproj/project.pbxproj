@@ -73,6 +73,8 @@
 		EA06CCB827D690B500ACE060 /* AnimalsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB627D690B500ACE060 /* AnimalsQuery.swift */; };
 		EA06CCBA27D6992300ACE060 /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB927D6992300ACE060 /* Encodable+JSON.swift */; };
 		EA06CCBB27D6992300ACE060 /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB927D6992300ACE060 /* Encodable+JSON.swift */; };
+		EA06CCBD27D771F000ACE060 /* PetfinderConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCBC27D771EF00ACE060 /* PetfinderConstants.swift */; };
+		EA06CCBE27D771F000ACE060 /* PetfinderConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCBC27D771EF00ACE060 /* PetfinderConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,7 @@
 		EA06CCB327D68D9F00ACE060 /* PetfinderImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderImageView.swift; sourceTree = "<group>"; };
 		EA06CCB627D690B500ACE060 /* AnimalsQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsQuery.swift; sourceTree = "<group>"; };
 		EA06CCB927D6992300ACE060 /* Encodable+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+JSON.swift"; sourceTree = "<group>"; };
+		EA06CCBC27D771EF00ACE060 /* PetfinderConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +267,7 @@
 		EA06CC5A27D61F4800ACE060 /* Petfinder */ = {
 			isa = PBXGroup;
 			children = (
+				EA06CCBC27D771EF00ACE060 /* PetfinderConstants.swift */,
 				EA06CCB227D68D8700ACE060 /* Component */,
 				EA06CC7627D6761D00ACE060 /* Communication */,
 				EA06CC6627D6681D00ACE060 /* Model */,
@@ -511,6 +515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA06CC5F27D629EE00ACE060 /* PetfinderApiResource.swift in Sources */,
+				EA06CCBD27D771F000ACE060 /* PetfinderConstants.swift in Sources */,
 				EA06CC4827D617CC00ACE060 /* ApiProvider.swift in Sources */,
 				EA06CCB427D68D9F00ACE060 /* PetfinderImageView.swift in Sources */,
 				EA06CC8E27D679EF00ACE060 /* TabBarController.swift in Sources */,
@@ -561,6 +566,7 @@
 				EA06CC6927D6683400ACE060 /* PetfinderAnimalsDto.swift in Sources */,
 				EA06CC6E27D66A7200ACE060 /* PetfinderApiProviderTests.swift in Sources */,
 				EA06CCB527D68D9F00ACE060 /* PetfinderImageView.swift in Sources */,
+				EA06CCBE27D771F000ACE060 /* PetfinderConstants.swift in Sources */,
 				EA06CC5127D6184400ACE060 /* ApiProviderTests.swift in Sources */,
 				EA06CC4927D617CC00ACE060 /* ApiProvider.swift in Sources */,
 				EA06CCA727D680C700ACE060 /* String+Localized.swift in Sources */,

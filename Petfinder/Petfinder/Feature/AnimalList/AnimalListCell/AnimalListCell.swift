@@ -25,8 +25,8 @@ public final class AnimalListCell: UITableViewCell {
         label.textAlignment = .left
         label.setContentCompressionResistancePriority(.required, for: .vertical)
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
-        label.numberOfLines = 2
-        label.font = UIFont.boldSystemFont(ofSize: 25.0)
+        label.numberOfLines = 0
+        label.font = UIFont.boldSystemFont(ofSize: 20.0)
         label.textColor = .black
         label.accessibilityIdentifier = "default"
         return label
@@ -38,7 +38,7 @@ public final class AnimalListCell: UITableViewCell {
         label.setContentCompressionResistancePriority(UILayoutPriority(1000), for: .vertical)
         label.setContentCompressionResistancePriority(UILayoutPriority(1000), for: .horizontal)
         label.textAlignment = .center
-        label.font = UIFont.boldSystemFont(ofSize: 18.0)
+        label.font = UIFont.boldSystemFont(ofSize: 15.0)
         label.textColor = .white
         label.accessibilityIdentifier = "default"
         label.text = "kAge".localized
@@ -51,7 +51,7 @@ public final class AnimalListCell: UITableViewCell {
         label.setContentCompressionResistancePriority(UILayoutPriority(1000), for: .vertical)
         label.setContentCompressionResistancePriority(UILayoutPriority(1000), for: .horizontal)
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 18.0)
+        label.font = UIFont.systemFont(ofSize: 15.0)
         label.textColor = .white
         label.accessibilityIdentifier = "default"
         return label
@@ -63,7 +63,7 @@ public final class AnimalListCell: UITableViewCell {
         label.setContentCompressionResistancePriority(UILayoutPriority(999), for: .vertical)
         label.setContentCompressionResistancePriority(UILayoutPriority(999), for: .horizontal)
         label.textAlignment = .center
-        label.font = UIFont.boldSystemFont(ofSize: 18.0)
+        label.font = UIFont.boldSystemFont(ofSize: 15.0)
         label.textColor = .white
         label.accessibilityIdentifier = "default"
         label.text = "kGender".localized
@@ -76,7 +76,7 @@ public final class AnimalListCell: UITableViewCell {
         label.setContentCompressionResistancePriority(UILayoutPriority(999), for: .vertical)
         label.setContentCompressionResistancePriority(UILayoutPriority(999), for: .horizontal)
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 18.0)
+        label.font = UIFont.systemFont(ofSize: 15.0)
         label.textColor = .white
         label.accessibilityIdentifier = "default"
         return label
@@ -88,7 +88,7 @@ public final class AnimalListCell: UITableViewCell {
         label.setContentCompressionResistancePriority(UILayoutPriority(998), for: .vertical)
         label.setContentCompressionResistancePriority(UILayoutPriority(998), for: .horizontal)
         label.textAlignment = .center
-        label.font = UIFont.boldSystemFont(ofSize: 18.0)
+        label.font = UIFont.boldSystemFont(ofSize: 15.0)
         label.textColor = .white
         label.accessibilityIdentifier = "default"
         label.text = "kSize".localized
@@ -101,7 +101,7 @@ public final class AnimalListCell: UITableViewCell {
         label.setContentCompressionResistancePriority(UILayoutPriority(998), for: .vertical)
         label.setContentCompressionResistancePriority(UILayoutPriority(998), for: .horizontal)
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 18.0)
+        label.font = UIFont.systemFont(ofSize: 15.0)
         label.textColor = .white
         label.accessibilityIdentifier = "default"
         return label
@@ -173,7 +173,7 @@ public final class AnimalListCell: UITableViewCell {
 extension AnimalListCell {
 
     public func setup(with model: AnimalListModel) {
-        labelName.text = model.name
+        labelName.text = model.name + " (\(String(format: "%.2f", model.distance ?? 0.0)) miles from you)"
         labelAge.text = model.age ?? "-"
         labelGender.text = model.gender ?? "-"
         labelSize.text = model.size ?? "-"

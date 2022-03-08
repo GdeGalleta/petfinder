@@ -17,8 +17,7 @@ public final class OrganizationsViewController: UIViewController {
     private let coordinator: OrganizationsCoordinatorType?
 
     private let coordScale = 20000.0
-    private let coordCenter = CLLocationCoordinate2D(latitude: 40.778532, longitude: -73.957451)
-    private lazy var coordRegion = MKCoordinateRegion(center: self.coordCenter, latitudinalMeters: coordScale, longitudinalMeters: coordScale)
+    private lazy var coordRegion = MKCoordinateRegion(center: K.defaultLocation, latitudinalMeters: coordScale, longitudinalMeters: coordScale)
     private lazy var viewMap: MKMapView = {
         let map = MKMapView()
         map.translatesAutoresizingMaskIntoConstraints = false

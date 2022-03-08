@@ -15,6 +15,7 @@ public struct AnimalListModel: Hashable {
     let gender: String?
     let size: String?
     let type: String?
+    let distance: Double?
     let photo: AnimalListPhotoModel?
 }
 

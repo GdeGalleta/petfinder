@@ -30,6 +30,9 @@ public final class AnimalListViewModel: AnimalListViewModelType {
 
     private var query: AnimalsQuery = {
         var query = AnimalsQuery()
+        query.location = "\(K.defaultLocation.latitude),\(K.defaultLocation.longitude)"
+        query.distance = 60
+        query.sort = "distance"
         query.page = 1
         query.limit = 20
         return query
@@ -59,6 +62,7 @@ public final class AnimalListViewModel: AnimalListViewModelType {
                                                    gender: $0.gender,
                                                    size: $0.animalSize,
                                                    type: $0.animalType,
+                                                   distance: $0.distance,
                                                    photo: photo)
                         }
                         return nil
