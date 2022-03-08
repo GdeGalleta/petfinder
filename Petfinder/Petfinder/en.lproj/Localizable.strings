@@ -9,3 +9,6 @@
 "kAnimals"="Animals";
 "kOrganizations"="Organizations";
 "kSearchByName"="Search by name";
+"kAge"="Age";
+"kGender"="Gender";
+"kSize"="Size";

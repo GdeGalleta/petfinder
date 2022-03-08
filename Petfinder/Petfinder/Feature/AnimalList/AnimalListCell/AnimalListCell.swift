@@ -25,18 +25,132 @@ public final class AnimalListCell: UITableViewCell {
         label.textAlignment = .left
         label.setContentCompressionResistancePriority(.required, for: .vertical)
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
-        label.numberOfLines = 0
+        label.numberOfLines = 2
         label.font = UIFont.boldSystemFont(ofSize: 25.0)
+        label.textColor = .black
+        label.accessibilityIdentifier = "default"
+        return label
+    }()
+
+    private let labelTitleAge: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.setContentCompressionResistancePriority(UILayoutPriority(1000), for: .vertical)
+        label.setContentCompressionResistancePriority(UILayoutPriority(1000), for: .horizontal)
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 18.0)
+        label.textColor = .white
+        label.accessibilityIdentifier = "default"
+        label.text = "kAge".localized
+        return label
+    }()
+
+    private let labelAge: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.setContentCompressionResistancePriority(UILayoutPriority(1000), for: .vertical)
+        label.setContentCompressionResistancePriority(UILayoutPriority(1000), for: .horizontal)
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 18.0)
         label.textColor = .white
         label.accessibilityIdentifier = "default"
         return label
     }()
 
+    private let labelTitleGender: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.setContentCompressionResistancePriority(UILayoutPriority(999), for: .vertical)
+        label.setContentCompressionResistancePriority(UILayoutPriority(999), for: .horizontal)
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 18.0)
+        label.textColor = .white
+        label.accessibilityIdentifier = "default"
+        label.text = "kGender".localized
+        return label
+    }()
+
+    private let labelGender: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.setContentCompressionResistancePriority(UILayoutPriority(999), for: .vertical)
+        label.setContentCompressionResistancePriority(UILayoutPriority(999), for: .horizontal)
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 18.0)
+        label.textColor = .white
+        label.accessibilityIdentifier = "default"
+        return label
+    }()
+
+    private let labelTitleSize: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.setContentCompressionResistancePriority(UILayoutPriority(998), for: .vertical)
+        label.setContentCompressionResistancePriority(UILayoutPriority(998), for: .horizontal)
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 18.0)
+        label.textColor = .white
+        label.accessibilityIdentifier = "default"
+        label.text = "kSize".localized
+        return label
+    }()
+
+    private let labelSize: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.setContentCompressionResistancePriority(UILayoutPriority(998), for: .vertical)
+        label.setContentCompressionResistancePriority(UILayoutPriority(998), for: .horizontal)
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 18.0)
+        label.textColor = .white
+        label.accessibilityIdentifier = "default"
+        return label
+    }()
+
+    private lazy var stackFavorite: UIStackView = {
+        let stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .vertical
+        stack.distribution = .fillProportionally
+        stack.alignment = .fill
+        stack.spacing = 1
+        stack.addArrangedSubview(labelName)
+        stack.addArrangedSubview(stackInfo)
+        return stack
+    }()
+
+    private lazy var stackInfo: UIStackView = {
+        let stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .horizontal
+        stack.distribution = .fillEqually
+        stack.alignment = .center
+        stack.spacing = 0
+        stack.backgroundColor = .black
+
+        let stackAge = UIStackView(arrangedSubviews: [labelTitleAge, labelAge])
+        stackAge.translatesAutoresizingMaskIntoConstraints = false
+        stackAge.axis = .vertical
+        stack.addArrangedSubview(stackAge)
+
+        let stackGender = UIStackView(arrangedSubviews: [labelTitleGender, labelGender])
+        stackGender.translatesAutoresizingMaskIntoConstraints = false
+        stackGender.axis = .vertical
+        stack.addArrangedSubview(stackGender)
+
+        let stackSize = UIStackView(arrangedSubviews: [labelTitleSize, labelSize])
+        stackSize.translatesAutoresizingMaskIntoConstraints = false
+        stackSize.axis = .vertical
+        stack.addArrangedSubview(stackSize)
+        return stack
+    }()
+
     private let imagePhoto: PetfinderImageView = {
         let image = PetfinderImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
+        image.clipsToBounds = true
         image.contentMode = .scaleAspectFill
-        image.image = UIImage(named: "animal_placeholder")
+        image.image = UIImage(named: "logo_paw")
         image.accessibilityIdentifier = "default"
         return image
     }()
@@ -60,6 +174,9 @@ extension AnimalListCell {
 
     public func setup(with model: AnimalListModel) {
         labelName.text = model.name
+        labelAge.text = model.age ?? "-"
+        labelGender.text = model.gender ?? "-"
+        labelSize.text = model.size ?? "-"
 
         if let url = model.photo?.url {
             imagePhoto.load(url: url)
@@ -72,14 +189,17 @@ extension AnimalListCell {
 
         contentView.addSubview(viewContainer)
         viewContainer.addSubview(imagePhoto)
-        viewContainer.addSubview(labelName)
+        viewContainer.addSubview(stackFavorite)
 
-        let rColor = UIColor.black
+        let rColor = UIColor.purple
         viewContainer.backgroundColor = rColor
         viewContainer.layer.borderWidth = 2
         viewContainer.layer.borderColor = rColor.cgColor
         viewContainer.layer.cornerRadius = 10
         viewContainer.layer.masksToBounds = true
+
+        stackInfo.layer.cornerRadius = 10
+        stackInfo.layer.masksToBounds = true
 
         NSLayoutConstraint.activate([
             viewContainer.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 2.5),
@@ -88,15 +208,15 @@ extension AnimalListCell {
             viewContainer.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -2.5),
 
             imagePhoto.widthAnchor.constraint(equalToConstant: 100),
-            imagePhoto.heightAnchor.constraint(equalToConstant: 100),
+            imagePhoto.heightAnchor.constraint(greaterThanOrEqualTo: imagePhoto.widthAnchor),
             imagePhoto.topAnchor.constraint(equalTo: viewContainer.topAnchor),
             imagePhoto.bottomAnchor.constraint(equalTo: viewContainer.bottomAnchor),
             imagePhoto.leadingAnchor.constraint(equalTo: viewContainer.leadingAnchor),
 
-            labelName.leadingAnchor.constraint(equalTo: imagePhoto.trailingAnchor, constant: 10),
-            labelName.topAnchor.constraint(equalTo: viewContainer.topAnchor),
-            labelName.bottomAnchor.constraint(equalTo: viewContainer.bottomAnchor),
-            labelName.trailingAnchor.constraint(equalTo: viewContainer.trailingAnchor, constant: -10)
+            stackFavorite.leadingAnchor.constraint(equalTo: imagePhoto.trailingAnchor, constant: 10),
+            stackFavorite.topAnchor.constraint(equalTo: viewContainer.topAnchor, constant: 10),
+            stackFavorite.bottomAnchor.constraint(equalTo: viewContainer.bottomAnchor, constant: -10),
+            stackFavorite.trailingAnchor.constraint(equalTo: viewContainer.trailingAnchor, constant: -10)
         ])
     }
 }

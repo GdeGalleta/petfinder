@@ -31,7 +31,7 @@ public final class AnimalListViewModel: AnimalListViewModelType {
     private var query: AnimalsQuery = {
         var query = AnimalsQuery()
         query.page = 1
-        query.limit = 10
+        query.limit = 20
         return query
     }()
 
