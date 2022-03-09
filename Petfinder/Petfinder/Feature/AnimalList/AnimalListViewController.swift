@@ -116,6 +116,7 @@ extension AnimalListViewController {
             cellProvider: { tableView, indexPath, model -> UITableViewCell? in
                 let cell = tableView.dequeueReusableCell(withIdentifier: AnimalListCell.identifier, for: indexPath) as? AnimalListCell
                 cell?.setup(with: model)
+                cell?.cellColor = UIColor.colorForIndex(indexPath.row, overR: true)
                 cell?.accessibilityIdentifier = "default"
                 return cell
             })

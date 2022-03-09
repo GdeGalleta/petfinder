@@ -82,8 +82,8 @@
 		EA06CCC627D7839800ACE060 /* organizations.json in Resources */ = {isa = PBXBuildFile; fileRef = EA06CCC527D7839800ACE060 /* organizations.json */; };
 		EA06CCC927D78C2F00ACE060 /* OrganizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCC827D78C2F00ACE060 /* OrganizationModel.swift */; };
 		EA06CCCA27D78C2F00ACE060 /* OrganizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCC827D78C2F00ACE060 /* OrganizationModel.swift */; };
-		EA06CCCC27D7BFB300ACE060 /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCCB27D7BFB300ACE060 /* UIColor+Random.swift */; };
-		EA06CCCD27D7BFB300ACE060 /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCCB27D7BFB300ACE060 /* UIColor+Random.swift */; };
+		EA06CCCC27D7BFB300ACE060 /* UIColor+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCCB27D7BFB300ACE060 /* UIColor+Index.swift */; };
+		EA06CCCD27D7BFB300ACE060 /* UIColor+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCCB27D7BFB300ACE060 /* UIColor+Index.swift */; };
 		EA06CCCF27D7C78A00ACE060 /* UIApplication+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCCE27D7C78A00ACE060 /* UIApplication+Test.swift */; };
 		EA06CCD027D7C78A00ACE060 /* UIApplication+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCCE27D7C78A00ACE060 /* UIApplication+Test.swift */; };
 		EA06CCD227D7CC0E00ACE060 /* PetfinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCD127D7CC0E00ACE060 /* PetfinderViewController.swift */; };
@@ -159,7 +159,7 @@
 		EA06CCC227D7822700ACE060 /* OrganizationsQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsQuery.swift; sourceTree = "<group>"; };
 		EA06CCC527D7839800ACE060 /* organizations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = organizations.json; sourceTree = "<group>"; };
 		EA06CCC827D78C2F00ACE060 /* OrganizationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationModel.swift; sourceTree = "<group>"; };
-		EA06CCCB27D7BFB300ACE060 /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Random.swift"; sourceTree = "<group>"; };
+		EA06CCCB27D7BFB300ACE060 /* UIColor+Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Index.swift"; sourceTree = "<group>"; };
 		EA06CCCE27D7C78A00ACE060 /* UIApplication+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Test.swift"; sourceTree = "<group>"; };
 		EA06CCD127D7CC0E00ACE060 /* PetfinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderViewController.swift; sourceTree = "<group>"; };
 		EA06CCD427D8B4DC00ACE060 /* String+Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Emoji.swift"; sourceTree = "<group>"; };
@@ -378,7 +378,7 @@
 				EA06CCD427D8B4DC00ACE060 /* String+Emoji.swift */,
 				EA06CCA527D680C700ACE060 /* String+Localized.swift */,
 				EA06CCB927D6992300ACE060 /* Encodable+JSON.swift */,
-				EA06CCCB27D7BFB300ACE060 /* UIColor+Random.swift */,
+				EA06CCCB27D7BFB300ACE060 /* UIColor+Index.swift */,
 				EA06CCCE27D7C78A00ACE060 /* UIApplication+Test.swift */,
 			);
 			path = Extension;
@@ -579,7 +579,7 @@
 				EA06CC7C27D676D100ACE060 /* MainCoordinator.swift in Sources */,
 				EA06CC1827D616E200ACE060 /* SceneDelegate.swift in Sources */,
 				EA06CC9B27D67DB200ACE060 /* OrganizationsViewModel.swift in Sources */,
-				EA06CCCC27D7BFB300ACE060 /* UIColor+Random.swift in Sources */,
+				EA06CCCC27D7BFB300ACE060 /* UIColor+Index.swift in Sources */,
 				EA06CC8A27D677F500ACE060 /* AnimalListViewModel.swift in Sources */,
 				EA06CCA627D680C700ACE060 /* String+Localized.swift in Sources */,
 				EA06CCB027D68D0D00ACE060 /* AnimalListCell.swift in Sources */,
@@ -600,7 +600,7 @@
 				EA06CC5527D6188300ACE060 /* URLProtocolMock.swift in Sources */,
 				EA06CCB827D690B500ACE060 /* AnimalsQuery.swift in Sources */,
 				EA06CCBB27D6992300ACE060 /* Encodable+JSON.swift in Sources */,
-				EA06CCCD27D7BFB300ACE060 /* UIColor+Random.swift in Sources */,
+				EA06CCCD27D7BFB300ACE060 /* UIColor+Index.swift in Sources */,
 				EA06CC7527D671DD00ACE060 /* ApiKeys.swift in Sources */,
 				EA06CC9C27D67DB200ACE060 /* OrganizationsViewModel.swift in Sources */,
 				EA06CC4C27D617E800ACE060 /* ApiResource.swift in Sources */,

@@ -169,8 +169,11 @@ public final class AnimalListCell: UITableViewCell {
         return image
     }()
 
-    public override func layoutSubviews() {
-        super.layoutSubviews()
+    public var cellColor: UIColor = K.Color.backgroundLight {
+        didSet {
+            viewContainer.backgroundColor = cellColor
+            viewContainer.layer.borderColor = cellColor.cgColor
+        }
     }
 
     // MARK: - Initializer
@@ -206,10 +209,9 @@ extension AnimalListCell {
         viewContainer.addSubview(imagePhoto)
         viewContainer.addSubview(stackFavorite)
 
-        let rColor = UIColor.randomLight
-        viewContainer.backgroundColor = rColor
+        viewContainer.backgroundColor = cellColor
         viewContainer.layer.borderWidth = 2
-        viewContainer.layer.borderColor = rColor.cgColor
+        viewContainer.layer.borderColor = cellColor.cgColor
         viewContainer.layer.cornerRadius = 10
         viewContainer.layer.masksToBounds = true
 
