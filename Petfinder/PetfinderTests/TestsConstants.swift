@@ -42,6 +42,14 @@ public struct TestsConstants {
         return localFile(forResource: "organizations", withExtension: "json")
     }()
 
+    static let typesJsonData: Data = {
+        return localFile(forResource: "types", withExtension: "json")
+    }()
+
+    static let petImage: Data = {
+        return localFile(forResource: "pet", withExtension: "png")
+    }()
+
     private static func localFile(forResource name: String?, withExtension ext: String?) -> Data {
         let fileUrl = testsBundle.url(forResource: name, withExtension: ext)
         guard let url = fileUrl, let data = try? Data(contentsOf: url) else {

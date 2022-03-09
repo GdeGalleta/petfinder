@@ -43,6 +43,10 @@ public class ApiResource<T: Decodable>: ApiResourceType {
     }
 
     private var requestGET: URLRequest? {
+        guard !baseURL.isEmpty else {
+            return nil
+        }
+        
         let path = "\(baseURL)\(pathURL)"
 
         var components = URLComponents(string: path)

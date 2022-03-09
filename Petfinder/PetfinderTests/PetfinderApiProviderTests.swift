@@ -132,4 +132,37 @@ class PetfinderApiProviderTests: XCTestCase {
 
         wait(for: [expectation0, expectation1], timeout: 5)
     }
+
+    func test_fetchTypes() {
+        let expectation0 = expectation(description: "call executed")
+        let expectation1 = expectation(description: "expected values received")
+
+        let resource = PetfinderApiResource<PetfinderTypesDto>.organizations()
+
+        URLProtocolMock.requestHandler = { request in
+            let response = HTTPURLResponse(url: (resource.request?.url)!,
+                                           statusCode: 200,
+                                           httpVersion: nil,
+                                           headerFields: nil)!
+            return (response, TestsConstants.typesJsonData)
+        }
+
+        petfinderApiProvider!.fetch(resource: resource)
+            .sink { completion in
+                switch completion {
+                    case .failure(let error):
+                        print("Error: \(error.localizedDescription)")
+                    case.finished:
+                        break
+                }
+                expectation0.fulfill()
+            } receiveValue: { (response: PetfinderTypesDto) in
+                if let types = response.types, !types.isEmpty {
+                    expectation1.fulfill()
+                }
+            }
+            .store(in: &cancellables)
+
+        wait(for: [expectation0, expectation1], timeout: 5)
+    }
 }

@@ -67,7 +67,7 @@
             "status": "adoptable",
             "status_changed_at": "2022-03-07T16:43:21+0000",
             "published_at": "2022-03-07T16:43:21+0000",
-            "distance": null,
+            "distance": 0.1234,
             "contact": {
                 "email": "route66rescue@yahoo.com",
                 "phone": "417-581-6666",

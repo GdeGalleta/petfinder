@@ -18,10 +18,10 @@ public class PetfinderImageView: UIImageView {
             guard let self = self else { return }
             if let data = try? self.loadImageData(url: url) {
                 if let image = UIImage(data: data) {
-
                     DispatchQueue.main.async { [weak self] in
                         guard let self = self else { return }
                         self.image = image
+                        completion?()
                     }
                 }
             }
