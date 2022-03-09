@@ -88,6 +88,8 @@
 		EA06CCD027D7C78A00ACE060 /* UIApplication+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCCE27D7C78A00ACE060 /* UIApplication+Test.swift */; };
 		EA06CCD227D7CC0E00ACE060 /* PetfinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCD127D7CC0E00ACE060 /* PetfinderViewController.swift */; };
 		EA06CCD327D7CC0E00ACE060 /* PetfinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCD127D7CC0E00ACE060 /* PetfinderViewController.swift */; };
+		EA06CCD827D8E4B900ACE060 /* Array+Duplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCD727D8E4B900ACE060 /* Array+Duplicates.swift */; };
+		EA06CCD927D8E4B900ACE060 /* Array+Duplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCD727D8E4B900ACE060 /* Array+Duplicates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +162,7 @@
 		EA06CCCB27D7BFB300ACE060 /* UIColor+Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Index.swift"; sourceTree = "<group>"; };
 		EA06CCCE27D7C78A00ACE060 /* UIApplication+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Test.swift"; sourceTree = "<group>"; };
 		EA06CCD127D7CC0E00ACE060 /* PetfinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderViewController.swift; sourceTree = "<group>"; };
+		EA06CCD727D8E4B900ACE060 /* Array+Duplicates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Duplicates.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +379,7 @@
 				EA06CCB927D6992300ACE060 /* Encodable+JSON.swift */,
 				EA06CCCB27D7BFB300ACE060 /* UIColor+Index.swift */,
 				EA06CCCE27D7C78A00ACE060 /* UIApplication+Test.swift */,
+				EA06CCD727D8E4B900ACE060 /* Array+Duplicates.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -584,6 +588,7 @@
 				EA06CCAC27D68B9000ACE060 /* AnimalListModel.swift in Sources */,
 				EA06CCBA27D6992300ACE060 /* Encodable+JSON.swift in Sources */,
 				EA06CCC327D7822700ACE060 /* OrganizationsQuery.swift in Sources */,
+				EA06CCD827D8E4B900ACE060 /* Array+Duplicates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +609,7 @@
 				EA06CC7A27D676BC00ACE060 /* StartCoordinator.swift in Sources */,
 				EA06CCA927D680E600ACE060 /* ExtensionTests.swift in Sources */,
 				EA06CC8827D6779D00ACE060 /* AnimalListCoordinator.swift in Sources */,
+				EA06CCD927D8E4B900ACE060 /* Array+Duplicates.swift in Sources */,
 				EA06CC8527D6777900ACE060 /* AnimalListViewController.swift in Sources */,
 				EA06CCD027D7C78A00ACE060 /* UIApplication+Test.swift in Sources */,
 				EA06CC6C27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */,

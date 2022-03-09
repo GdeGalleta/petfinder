@@ -83,12 +83,16 @@ public final class OrganizationsViewModel: OrganizationsViewModelType {
                 }
             } receiveValue: { [weak self] response in
                 guard let self = self else { return }
-                self.dataSource+=response
+                var dataSourceValue = self.dataSource
+                dataSourceValue.append(contentsOf: response)
+                dataSourceValue.removeDuplicates()
+                self.dataSource = dataSourceValue
             }
             .store(in: &cancellables)
     }
 
     public func fetchOrganizations() {
+        dataSource = []
         fetchOrganizations(query: query)
     }
 }

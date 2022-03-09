@@ -9,30 +9,30 @@ import Foundation
 
 // MARK: - AnimalsDto
 public struct PetfinderAnimalsDto: Codable {
-    let animals: [Animal]?
-    let pagination: Pagination?
+    let animals: [PetfinderAnimalsAnimalDto]?
+    let pagination: PetfinderAnimalsPaginationDto?
 }
 
 // MARK: - Animal
-public struct Animal: Codable {
+public struct PetfinderAnimalsAnimalDto: Codable {
     let identifier: Int?
     let organizationID: String?
     let url: String?
     let animalType, species: String?
-    let breeds: Breeds?
-    let colors: Colors?
+    let breeds: PetfinderAnimalsBreedsDto?
+    let colors: PetfinderAnimalsColorsDto?
     let age, gender, animalSize, coat: String?
     let name, animalDescription: String?
-    let photos: [Photo]?
-    let videos: [Video]?
+    let photos: [PetfinderAnimalsPhotoDto]?
+    let videos: [PetfinderAnimalsVideoDto]?
     let status: String?
-    let attributes: Attributes?
-    let environment: Environment?
+    let attributes: PetfinderAttributesDto?
+    let environment: PetfinderAnimalsEnvironmentDto?
     let tags: [String]?
-    let contact: Contact?
+    let contact: PetfinderAnimalsContactDto?
     let publishedAt: String?
     let distance: Double?
-    let links: AnimalLinks?
+    let links: PetfinderAnimalsAnimalLinksDto?
 
     enum CodingKeys: String, CodingKey {
         case identifier = "id"
@@ -49,7 +49,7 @@ public struct Animal: Codable {
 }
 
 // MARK: - Attributes
-public struct Attributes: Codable {
+public struct PetfinderAttributesDto: Codable {
     let spayedNeutered, houseTrained, declawed, specialNeeds: Bool?
     let shotsCurrent: Bool?
 
@@ -63,36 +63,36 @@ public struct Attributes: Codable {
 }
 
 // MARK: - Breeds
-public struct Breeds: Codable {
+public struct PetfinderAnimalsBreedsDto: Codable {
     let primary: String?
     let mixed, unknown: Bool?
 }
 
 // MARK: - Colors
-public struct Colors: Codable {
+public struct PetfinderAnimalsColorsDto: Codable {
     let primary: String?
 }
 
 // MARK: - Contact
-public struct Contact: Codable {
+public struct PetfinderAnimalsContactDto: Codable {
     let email, phone: String?
-    let address: Address?
+    let address: PetfinderAnimalsAddressDto?
 }
 
 // MARK: - Address
-public struct Address: Codable {
+public struct PetfinderAnimalsAddressDto: Codable {
     let address1, address2: String?
     let city, state, postcode, country: String?
 }
 
 // MARK: - Environment
-public struct Environment: Codable {
+public struct PetfinderAnimalsEnvironmentDto: Codable {
     let children, dogs, cats: Bool?
 }
 
 // MARK: - AnimalLinks
-public struct AnimalLinks: Codable {
-    let linksSelf, type, organization: Organization?
+public struct PetfinderAnimalsAnimalLinksDto: Codable {
+    let linksSelf, type, organization: PetfinderAnimalsOrganizationDto?
 
     enum CodingKeys: String, CodingKey {
         case linksSelf = "self"
@@ -101,24 +101,24 @@ public struct AnimalLinks: Codable {
 }
 
 // MARK: - Organization
-public struct Organization: Codable {
+public struct PetfinderAnimalsOrganizationDto: Codable {
     let href: String?
 }
 
 // MARK: - Photo
-public struct Photo: Codable {
+public struct PetfinderAnimalsPhotoDto: Codable {
     let small, medium, large, full: String?
 }
 
 // MARK: - Video
-public struct Video: Codable {
+public struct PetfinderAnimalsVideoDto: Codable {
     let embed: String?
 }
 
 // MARK: - Pagination
-public struct Pagination: Codable {
+public struct PetfinderAnimalsPaginationDto: Codable {
     let countPerPage, totalCount, currentPage, totalPages: Int?
-    let links: PaginationLinks?
+    let links: PetfinderAnimalsPaginationLinksDto?
 
     enum CodingKeys: String, CodingKey {
         case countPerPage = "count_per_page"
@@ -130,5 +130,5 @@ public struct Pagination: Codable {
 }
 
 // MARK: - PaginationLinks
-public struct PaginationLinks: Codable {
+public struct PetfinderAnimalsPaginationLinksDto: Codable {
 }

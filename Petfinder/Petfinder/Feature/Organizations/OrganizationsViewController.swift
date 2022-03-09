@@ -151,8 +151,6 @@ extension OrganizationsViewController: MKMapViewDelegate {
             mail.setToRecipients([recipient])
             mail.setMessageBody("kEmailBody".localized, isHTML: true)
             present(mail, animated: true)
-        } else {
-            // show failure alert
         }
     }
 }

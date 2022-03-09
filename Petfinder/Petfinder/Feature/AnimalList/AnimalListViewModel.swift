@@ -47,6 +47,8 @@ public final class AnimalListViewModel: AnimalListViewModelType {
         apiProvider
             .fetch(resource: resource)
             .compactMap({ (response: PetfinderAnimalsDto) -> [AnimalListModel] in
+
+                //AnimalListModel to AnimalListModel
                 var converted: [AnimalListModel] = []
                 if let results = response.animals {
                     converted+=results.compactMap({
@@ -80,7 +82,10 @@ public final class AnimalListViewModel: AnimalListViewModelType {
                 }
             } receiveValue: { [weak self] response in
                 guard let self = self else { return }
-                self.dataSource+=response
+                var dataSourceValue = self.dataSource
+                dataSourceValue.append(contentsOf: response)
+                dataSourceValue.removeDuplicates()
+                self.dataSource = dataSourceValue
             }
             .store(in: &cancellables)
     }

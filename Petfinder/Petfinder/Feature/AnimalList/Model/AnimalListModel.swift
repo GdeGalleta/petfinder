@@ -8,7 +8,6 @@
 import Foundation
 
 public struct AnimalListModel: Hashable {
-    private let id = UUID()
     let identifier: Int
     let name: String
     let age: String?
