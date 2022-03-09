@@ -54,7 +54,7 @@ public final class OrganizationsViewController: PetfinderViewController {
 
 extension OrganizationsViewController {
     private func setupLayout() {
-        title = "kOrganizations".localized
+        navigationItem.title = "kOrganizationsTitle".localized
 
         view.backgroundColor = K.Color.backgroundDark
 

@@ -74,7 +74,7 @@ public final class AnimalListViewController: PetfinderViewController {
 
 extension AnimalListViewController {
     private func setupLayout() {
-        title = "kAnimals".localized
+        navigationItem.title = "kAnimalListTitle".localized
 
         view.backgroundColor = K.Color.backgroundDark
 
