@@ -27,6 +27,12 @@ public final class AnimalListViewController: PetfinderViewController {
         return control
     }()
 
+    private let footerSpinner: UIActivityIndicatorView = {
+        let spinner = UIActivityIndicatorView(style: .large)
+        spinner.color = K.Color.textLight
+        return spinner
+    }()
+
     private lazy var tableView: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
@@ -36,6 +42,7 @@ public final class AnimalListViewController: PetfinderViewController {
         table.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 200, right: 0)
         table.register(AnimalListCell.self, forCellReuseIdentifier: AnimalListCell.identifier)
         table.accessibilityIdentifier = "default"
+        table.tableFooterView = footerSpinner
         return table
     }()
 
@@ -99,6 +106,7 @@ extension AnimalListViewController {
                 guard let self = self else { return }
                 self.setupSnapshot()
                 self.refreshControl.endRefreshing()
+                self.footerSpinner.stopAnimating()
             }
             .store(in: &cancellables)
     }
@@ -136,19 +144,15 @@ extension AnimalListViewController: UITableViewDelegate {
         return UITableView.automaticDimension
     }
 
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Coordinate to detail
-    }
-
     public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard !UIApplication.isRunningTest else { return }
-        if indexPath.row == viewModel.dataSource.count-1 {
-            viewModel.fetchMoreAnimals()
-        }
 
-        cell.alpha = 0
-        UIView.animate(withDuration: 0.2) {
-            cell.alpha = 1.0
+        let lastSectionIndex = tableView.numberOfSections - 1
+        let lastRowIndex = tableView.numberOfRows(inSection: lastSectionIndex) - 1
+
+        if indexPath.section ==  lastSectionIndex && indexPath.row == lastRowIndex {
+            footerSpinner.startAnimating()
+            viewModel.fetchMoreAnimals()
         }
     }
 }
@@ -156,14 +160,14 @@ extension AnimalListViewController: UITableViewDelegate {
 extension AnimalListViewController: UISearchBarDelegate {
 
     public func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        viewModel.fetchAnimals()
+        fetchData()
     }
 
     public func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         NSObject.cancelPreviousPerformRequests(withTarget: self,
                                                selector: #selector(self.reload(_:)),
                                                object: searchBar)
-        perform(#selector(self.reload(_:)), with: searchBar, afterDelay: 0.75)
+        perform(#selector(self.reload(_:)), with: searchBar, afterDelay: 1)
     }
 
     @objc func reload(_ searchBar: UISearchBar) {
