@@ -26,7 +26,7 @@ public class PetfinderApiProvider {
 
 extension PetfinderApiProvider: ApiProviderType {
 
-    public func fetchData<V>(resource: V) -> AnyPublisher<Data, ApiError> where V : ApiResourceType {
+    public func fetchData<V>(resource: V) -> AnyPublisher<Data, ApiError> where V: ApiResourceType {
         return fetchToken()
             .map { [weak self] response -> AnyPublisher<Data, ApiError> in
                 guard let self = self else {
@@ -35,7 +35,7 @@ extension PetfinderApiProvider: ApiProviderType {
                 guard let token = response.accessToken else {
                     return Fail(error: ApiError.apiError(description: "Invalid token")).eraseToAnyPublisher()
                 }
-                resource.headers = ["Authorization":"Bearer \(token)"]
+                resource.headers = ["Authorization": "Bearer \(token)"]
                 return self.apiProvider.fetchData(resource: resource)
             }
             .switchToLatest()
@@ -43,7 +43,7 @@ extension PetfinderApiProvider: ApiProviderType {
             .eraseToAnyPublisher()
     }
 
-    public func fetch<T, V>(resource: V) -> AnyPublisher<T, ApiError> where T : Decodable, V : ApiResourceType {
+    public func fetch<T, V>(resource: V) -> AnyPublisher<T, ApiError> where T: Decodable, V: ApiResourceType {
         return fetchToken()
             .map { [weak self] response -> AnyPublisher<T, ApiError> in
                 guard let self = self else {
@@ -52,7 +52,7 @@ extension PetfinderApiProvider: ApiProviderType {
                 guard let token = response.accessToken else {
                     return Fail(error: ApiError.apiError(description: "Invalid token")).eraseToAnyPublisher()
                 }
-                resource.headers = ["Authorization":"Bearer \(token)"]
+                resource.headers = ["Authorization": "Bearer \(token)"]
                 return self.apiProvider.fetch(resource: resource)
             }
             .switchToLatest()

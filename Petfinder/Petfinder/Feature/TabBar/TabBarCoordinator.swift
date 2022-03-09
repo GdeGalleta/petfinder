@@ -31,7 +31,7 @@ public final class TabBarCoordinator: FlowCoordinator, TabBarCoordinatorType {
         animalListNavigationController.tabBarItem = animalListTabBarItem
         let animalListCoordinator = AnimalListCoordinator(navigationController: animalListNavigationController)
 
-        //Organizations
+        // Organizations
         let organizationTabBarItem = UITabBarItem(title: "kOrganizations".localized,
                                                   image: UIImage(systemName: "star.fill"),
                                                   tag: 1)

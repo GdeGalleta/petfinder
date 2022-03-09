@@ -46,7 +46,7 @@ public class ApiResource<T: Decodable>: ApiResourceType {
         guard !baseURL.isEmpty else {
             return nil
         }
-        
+
         let path = "\(baseURL)\(pathURL)"
 
         var components = URLComponents(string: path)

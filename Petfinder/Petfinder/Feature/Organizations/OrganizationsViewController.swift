@@ -79,7 +79,6 @@ extension OrganizationsViewController {
             }
             .store(in: &cancellables)
 
-
         viewModel.dataSourcePublisher
             .receive(on: RunLoop.main)
             .sink { [weak self] organizations in
@@ -135,7 +134,7 @@ extension OrganizationsViewController: MKMapViewDelegate {
             annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
 
             if let recipient = annotation.subtitle as? String {
-                let sendMessageAction = UIAction(handler: { [weak self] action in
+                let sendMessageAction = UIAction(handler: { [weak self] _ in
                     self?.sendEmail(recipient: recipient)
                 })
                 annotationView?.rightCalloutAccessoryView = UIButton(type: .infoDark, primaryAction: sendMessageAction)

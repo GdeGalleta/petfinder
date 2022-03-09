@@ -11,7 +11,7 @@ public struct TestsConstants {
     private class Class {}
 
     static var isOfflineTest = true
-    
+
     static var testsBundle: Bundle { return Bundle(for: TestsConstants.Class.self) }
 
     // MARK: - URLSession
