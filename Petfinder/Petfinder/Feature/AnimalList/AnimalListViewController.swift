@@ -100,6 +100,15 @@ extension AnimalListViewController {
     }
 
     private func setupBinding() {
+        viewModel.animalTypesPublisher
+            .receive(on: RunLoop.main)
+            .sink { [weak self] response in
+                guard let self = self else { return }
+                self.searchController.searchBar.scopeButtonTitles = response
+                self.searchController.searchBar.selectedScopeButtonIndex = 0
+            }
+            .store(in: &cancellables)
+
         viewModel.dataSourcePublisher
             .receive(on: RunLoop.main)
             .sink { [weak self] _ in
@@ -112,6 +121,7 @@ extension AnimalListViewController {
     }
 
     @objc private func fetchData() {
+        viewModel.fetchTypes()
         viewModel.fetchAnimals()
     }
 }
@@ -146,6 +156,7 @@ extension AnimalListViewController: UITableViewDelegate {
 
     public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard !UIApplication.isRunningTest else { return }
+        guard viewModel.hasDataSourceMoreData else { return }
 
         let lastSectionIndex = tableView.numberOfSections - 1
         let lastRowIndex = tableView.numberOfRows(inSection: lastSectionIndex) - 1
@@ -158,6 +169,14 @@ extension AnimalListViewController: UITableViewDelegate {
 }
 
 extension AnimalListViewController: UISearchBarDelegate {
+
+    public func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        var selectedType: String? = viewModel.animalTypes[selectedScope]
+        selectedType = "kAll".localized != selectedType ? selectedType : nil
+        viewModel.fetchAnimals(type: selectedType)
+
+        searchController.searchBar.endEditing(true)
+    }
 
     public func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         fetchData()

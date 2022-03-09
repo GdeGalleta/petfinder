@@ -12,7 +12,13 @@ public protocol OrganizationsViewModelType {
     var dataSource: [OrganizationModel] { get }
     var dataSourcePublished: Published<[OrganizationModel]> { get }
     var dataSourcePublisher: Published<[OrganizationModel]>.Publisher { get }
+
+    var hasDataSourceMoreData: Bool { get }
+    var hasDataSourceMoreDataPublished: Published<Bool> { get }
+    var hasDataSourceMoreDataPublisher: Published<Bool>.Publisher { get }
+
     func fetchOrganizations()
+    func fetchMoreOrganizations()
 }
 
 public final class OrganizationsViewModel: OrganizationsViewModelType {
@@ -25,10 +31,14 @@ public final class OrganizationsViewModel: OrganizationsViewModelType {
     public var dataSourcePublished: Published<[OrganizationModel]> { _dataSource }
     public var dataSourcePublisher: Published<[OrganizationModel]>.Publisher { $dataSource }
 
+    @Published public var hasDataSourceMoreData: Bool = false
+    public var hasDataSourceMoreDataPublished: Published<Bool> { _hasDataSourceMoreData }
+    public var hasDataSourceMoreDataPublisher: Published<Bool>.Publisher { $hasDataSourceMoreData }
+
     private var query: OrganizationsQuery = {
         var query = OrganizationsQuery()
         query.location = "\(K.defaultLocation.latitude),\(K.defaultLocation.longitude)"
-        query.distance = 60
+        query.distance = K.defaultDistance
         query.sort = "distance"
         query.page = 1
         query.limit = 100
@@ -41,9 +51,14 @@ public final class OrganizationsViewModel: OrganizationsViewModelType {
 
     private func fetchOrganizations(query: OrganizationsQuery) {
         let resource = PetfinderApiResource<PetfinderOrganizationsDto>.organizations(query: query)
+        var hasMoreData = hasDataSourceMoreData
         apiProvider
             .fetch(resource: resource)
             .compactMap({ (response: PetfinderOrganizationsDto) -> [OrganizationModel] in
+                // Checking if next page exists
+                hasMoreData = query.page + 1 <= response.pagination?.totalPages ?? 0
+
+                // Conversion from PetfinderOrganizationsOrganizationDto to OrganizationModel
                 var converted: [OrganizationModel] = []
                 if let results = response.organizations {
                     converted+=results.compactMap({
@@ -53,20 +68,13 @@ public final class OrganizationsViewModel: OrganizationsViewModelType {
                            let country = $0.address?.country, !country.isEmpty,
                            let postcode = $0.address?.postcode, !postcode.isEmpty,
                            let state = $0.address?.state, !state.isEmpty,
-                           let city = $0.address?.city, !city.isEmpty {
-
-                            var address = ""
-                            if let address1 = $0.address?.address1, !address1.isEmpty { address+=" \(address1)" }
-                            else if let address2 = $0.address?.address2, !address2.isEmpty { address+=" \(address2)" }
-                            address+=" \(city)"
-                            address+=" \(state)"
-                            address+=" \(postcode)"
-                            address+=" \(country)"
-
+                           let city = $0.address?.city, !city.isEmpty,
+                           let address = $0.address?.address1 ?? $0.address?.address2, !address.isEmpty {
+                            let completeAddress = "\(address) \(city) \(state) \(postcode) \(country)"
                             return OrganizationModel(identifier: identifier,
                                                      name: name,
                                                      email: email,
-                                                     address: address)
+                                                     address: completeAddress)
                         }
                         return nil
                     })
@@ -83,6 +91,8 @@ public final class OrganizationsViewModel: OrganizationsViewModelType {
                 }
             } receiveValue: { [weak self] response in
                 guard let self = self else { return }
+                self.hasDataSourceMoreData = hasMoreData
+
                 var dataSourceValue = self.dataSource
                 dataSourceValue.append(contentsOf: response)
                 dataSourceValue.removeDuplicates()
@@ -93,6 +103,11 @@ public final class OrganizationsViewModel: OrganizationsViewModelType {
 
     public func fetchOrganizations() {
         dataSource = []
+        fetchOrganizations(query: query)
+    }
+
+    public func fetchMoreOrganizations() {
+        query.page+=1
         fetchOrganizations(query: query)
     }
 }

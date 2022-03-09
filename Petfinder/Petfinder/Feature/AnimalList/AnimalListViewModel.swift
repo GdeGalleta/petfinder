@@ -10,10 +10,20 @@ import Combine
 
 public protocol AnimalListViewModelType {
 
+    var animalTypes: [String] { get }
+    var animalTypesPublished: Published<[String]> { get }
+    var animalTypesPublisher: Published<[String]>.Publisher { get }
+
     var dataSource: [AnimalListModel] { get }
     var dataSourcePublished: Published<[AnimalListModel]> { get }
     var dataSourcePublisher: Published<[AnimalListModel]>.Publisher { get }
+    var hasDataSourceMoreData: Bool { get }
+
+    func fetchTypes()
+
     func fetchAnimals(name: String?)
+    func fetchAnimals(type: String?)
+
     func fetchAnimals()
     func fetchMoreAnimals()
 }
@@ -24,14 +34,20 @@ public final class AnimalListViewModel: AnimalListViewModelType {
 
     private let apiProvider: ApiProviderType
 
+    @Published public var animalTypes: [String] = []
+    public var animalTypesPublished: Published<[String]> { _animalTypes }
+    public var animalTypesPublisher: Published<[String]>.Publisher { $animalTypes }
+
     @Published public var dataSource: [AnimalListModel] = []
     public var dataSourcePublished: Published<[AnimalListModel]> { _dataSource }
     public var dataSourcePublisher: Published<[AnimalListModel]>.Publisher { $dataSource }
 
+    public var hasDataSourceMoreData: Bool = false
+
     private var query: AnimalsQuery = {
         var query = AnimalsQuery()
         query.location = "\(K.defaultLocation.latitude),\(K.defaultLocation.longitude)"
-        query.distance = 60
+        query.distance = K.defaultDistance
         query.sort = "distance"
         query.page = 1
         query.limit = 20
@@ -42,13 +58,47 @@ public final class AnimalListViewModel: AnimalListViewModelType {
         self.apiProvider = apiProvider
     }
 
+    public func fetchTypes() {
+        let resource = PetfinderApiResource<PetfinderTypesDto>.types()
+
+        apiProvider
+            .fetch(resource: resource)
+            .compactMap({ (response: PetfinderTypesDto) -> [String] in
+                // Conversion from PetfinderTypesDto to String
+                var converted: [String] = ["kAll".localized]
+                if let results = response.types {
+                    converted+=results.compactMap({
+                        if let name = $0.name, !name.isEmpty { return name }
+                        return nil
+                    })
+                }
+                return converted
+            })
+            .sink { [weak self] completion in
+                guard let self = self else { return }
+                switch completion {
+                    case .failure:
+                        self.dataSource = []
+                    case .finished:
+                        break
+                }
+            } receiveValue: { [weak self] response in
+                guard let self = self else { return }
+                self.animalTypes = response
+            }
+            .store(in: &cancellables)
+    }
+
     private func fetchAnimals(query: AnimalsQuery) {
         let resource = PetfinderApiResource<PetfinderAnimalsDto>.animals(query: query)
+        var hasMoreData = hasDataSourceMoreData
         apiProvider
             .fetch(resource: resource)
             .compactMap({ (response: PetfinderAnimalsDto) -> [AnimalListModel] in
+                // Checking if next page exists
+                hasMoreData = query.page + 1 <= response.pagination?.totalPages ?? 0
 
-                //AnimalListModel to AnimalListModel
+                // Conversion AnimalListModel to AnimalListModel
                 var converted: [AnimalListModel] = []
                 if let results = response.animals {
                     converted+=results.compactMap({
@@ -82,6 +132,8 @@ public final class AnimalListViewModel: AnimalListViewModelType {
                 }
             } receiveValue: { [weak self] response in
                 guard let self = self else { return }
+                self.hasDataSourceMoreData = hasMoreData
+
                 var dataSourceValue = self.dataSource
                 dataSourceValue.append(contentsOf: response)
                 dataSourceValue.removeDuplicates()
@@ -103,9 +155,23 @@ public final class AnimalListViewModel: AnimalListViewModelType {
         fetchAnimals(query: query)
     }
 
+    public func fetchAnimals(type: String?) {
+        dataSource = []
+        query.page = 1
+
+        if let typeValue = type, !typeValue.isEmpty {
+            query.type = typeValue
+        } else {
+            query.type = nil
+        }
+
+        fetchAnimals(query: query)
+    }
+
     public func fetchAnimals() {
         dataSource = []
         query.page = 1
+        query.type = nil
         query.name = nil
         fetchAnimals(query: query)
     }

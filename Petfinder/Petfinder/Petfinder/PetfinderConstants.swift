@@ -11,6 +11,7 @@ import UIKit.UIColor
 
 public struct K {
     public static let defaultLocation = CLLocationCoordinate2D(latitude: 40.778532, longitude: -73.957451)
+    public static let defaultDistance = 10
     public static let testMode = "testMode"
     public struct Color {
         public static let backgroundDark: UIColor = UIColor.init(named: "background_dark") ?? .black

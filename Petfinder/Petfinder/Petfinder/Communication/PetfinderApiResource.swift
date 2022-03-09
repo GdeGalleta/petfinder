@@ -13,6 +13,7 @@ private enum PetfinderEndpoint: String {
     case token = "oauth2/token"
     case animals
     case organizations
+    case types
 }
 
 public final class PetfinderApiResource<T: Decodable>: ApiResource<T> {
@@ -55,6 +56,14 @@ public final class PetfinderApiResource<T: Decodable>: ApiResource<T> {
             httpMethod: .GET,
             endpoint: .organizations,
             queryParameters: queryParameters)
+        return resource
+    }
+
+    public class func types() -> PetfinderApiResource<PetfinderTypesDto> {
+        let resource = PetfinderApiResource<PetfinderTypesDto>(
+            httpMethod: .GET,
+            endpoint: .types,
+            queryParameters: [:])
         return resource
     }
 }

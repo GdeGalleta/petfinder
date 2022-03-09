@@ -71,6 +71,15 @@ extension OrganizationsViewController {
     }
 
     private func setupBinding() {
+        viewModel.hasDataSourceMoreDataPublisher
+            .receive(on: RunLoop.main)
+            .sink { [weak self] hasMoreData in
+                guard let self = self else { return }
+                if hasMoreData { self.viewModel.fetchMoreOrganizations() }
+            }
+            .store(in: &cancellables)
+
+
         viewModel.dataSourcePublisher
             .receive(on: RunLoop.main)
             .sink { [weak self] organizations in
@@ -99,14 +108,13 @@ extension OrganizationsViewController {
                 guard error == nil else { return }
                 guard let placemark = placemarks?.first else { return }
 
-                if let coordinates = placemark.location?.coordinate {
-                    let annotation = MKPointAnnotation()
-                    annotation.coordinate = coordinates
-                    annotation.title = organization.name
-                    annotation.subtitle = organization.email
-
+                if let coordinate = placemark.location?.coordinate {
                     DispatchQueue.main.async { [weak self] in
                         guard let self = self else { return }
+                        let annotation = MKPointAnnotation()
+                        annotation.coordinate = coordinate
+                        annotation.title = organization.name
+                        annotation.subtitle = organization.email
                         self.viewMap.addAnnotation(annotation)
                     }
                 }
