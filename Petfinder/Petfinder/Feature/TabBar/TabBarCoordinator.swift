@@ -23,9 +23,8 @@ public final class TabBarCoordinator: FlowCoordinator, TabBarCoordinatorType {
         let tabBarController = TabBarController(coordinator: self)
 
         // AnimalList
-        let animalListImage = "🐶".image()
         let animalListTabBarItem = UITabBarItem(title: "kAnimals".localized,
-                                                image: animalListImage,
+                                                image: UIImage(systemName: "tortoise.fill"),
                                                 tag: 0)
         animalListTabBarItem.accessibilityIdentifier = K.AccessIden.tabBarButtonAnimalList
         let animalListNavigationController = UINavigationController()
@@ -33,9 +32,8 @@ public final class TabBarCoordinator: FlowCoordinator, TabBarCoordinatorType {
         let animalListCoordinator = AnimalListCoordinator(navigationController: animalListNavigationController)
 
         //Organizations
-        let organizationImage = "🏠".image()
         let organizationTabBarItem = UITabBarItem(title: "kOrganizations".localized,
-                                                  image: organizationImage,
+                                                  image: UIImage(systemName: "star.fill"),
                                                   tag: 1)
         organizationTabBarItem.accessibilityIdentifier = K.AccessIden.tabBarButtonOrganizations
         let organizationsNavigationController = UINavigationController()

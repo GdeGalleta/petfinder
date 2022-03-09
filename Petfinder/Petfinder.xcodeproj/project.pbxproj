@@ -88,8 +88,6 @@
 		EA06CCD027D7C78A00ACE060 /* UIApplication+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCCE27D7C78A00ACE060 /* UIApplication+Test.swift */; };
 		EA06CCD227D7CC0E00ACE060 /* PetfinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCD127D7CC0E00ACE060 /* PetfinderViewController.swift */; };
 		EA06CCD327D7CC0E00ACE060 /* PetfinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCD127D7CC0E00ACE060 /* PetfinderViewController.swift */; };
-		EA06CCD527D8B4DD00ACE060 /* String+Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCD427D8B4DC00ACE060 /* String+Emoji.swift */; };
-		EA06CCD627D8B4DD00ACE060 /* String+Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCD427D8B4DC00ACE060 /* String+Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,7 +160,6 @@
 		EA06CCCB27D7BFB300ACE060 /* UIColor+Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Index.swift"; sourceTree = "<group>"; };
 		EA06CCCE27D7C78A00ACE060 /* UIApplication+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Test.swift"; sourceTree = "<group>"; };
 		EA06CCD127D7CC0E00ACE060 /* PetfinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderViewController.swift; sourceTree = "<group>"; };
-		EA06CCD427D8B4DC00ACE060 /* String+Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Emoji.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,7 +372,6 @@
 		EA06CCA427D680AF00ACE060 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				EA06CCD427D8B4DC00ACE060 /* String+Emoji.swift */,
 				EA06CCA527D680C700ACE060 /* String+Localized.swift */,
 				EA06CCB927D6992300ACE060 /* Encodable+JSON.swift */,
 				EA06CCCB27D7BFB300ACE060 /* UIColor+Index.swift */,
@@ -588,7 +584,6 @@
 				EA06CCAC27D68B9000ACE060 /* AnimalListModel.swift in Sources */,
 				EA06CCBA27D6992300ACE060 /* Encodable+JSON.swift in Sources */,
 				EA06CCC327D7822700ACE060 /* OrganizationsQuery.swift in Sources */,
-				EA06CCD527D8B4DD00ACE060 /* String+Emoji.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,7 +609,6 @@
 				EA06CC6C27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */,
 				EA06CCD327D7CC0E00ACE060 /* PetfinderViewController.swift in Sources */,
 				EA06CC6927D6683400ACE060 /* PetfinderAnimalsDto.swift in Sources */,
-				EA06CCD627D8B4DD00ACE060 /* String+Emoji.swift in Sources */,
 				EA06CC6E27D66A7200ACE060 /* PetfinderApiProviderTests.swift in Sources */,
 				EA06CCCA27D78C2F00ACE060 /* OrganizationModel.swift in Sources */,
 				EA06CCB527D68D9F00ACE060 /* PetfinderImageView.swift in Sources */,

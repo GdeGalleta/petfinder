@@ -14,10 +14,10 @@ public struct K {
     public static let testMode = "testMode"
     public struct Color {
         public static let backgroundDark: UIColor = UIColor.init(named: "background_dark") ?? .black
-        public static let backgroundLight: UIColor = UIColor.init(named: "background_light") ?? .darkGray
-        public static let textDark: UIColor = UIColor.init(named: "text_dark") ?? .yellow
-        public static let textLight: UIColor = UIColor.init(named: "text_light") ?? .cyan
-        public static let mapPinColor: UIColor = .cyan
+        public static let backgroundLight: UIColor = UIColor.init(named: "background_light") ?? .lightGray
+        public static let textDark: UIColor = UIColor.init(named: "text_dark") ?? .black
+        public static let textLight: UIColor = UIColor.init(named: "text_light") ?? .red
+        public static let mapPinColor: UIColor = textLight
     }
     public struct AccessIden {
         public static let tabBarButtonAnimalList = "tabBarButtonAnimalList"
