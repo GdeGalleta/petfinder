@@ -7,10 +7,11 @@
 
 import Foundation
 import Combine
+@testable import Petfinder
 
 public final class PetfinderApiProviderMock: PetfinderApiProvider {
 
-    public override func fetchToken() -> AnyPublisher<PetfinderOAuthDto, ApiError> {        
+    public override func fetchToken() -> AnyPublisher<PetfinderOAuthDto, ApiError> {
         let data = PetfinderOAuthDto(tokenType: "tokenType", expiresIn: 3600, accessToken: "accessToken")
         return Just(data)
             .setFailureType(to: ApiError.self)

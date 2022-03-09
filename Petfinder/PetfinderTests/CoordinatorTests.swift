@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import Petfinder
 
 class CoordinatorTests: XCTestCase {
 

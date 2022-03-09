@@ -7,6 +7,7 @@
 
 import XCTest
 import Combine
+@testable import Petfinder
 
 class PetfinderApiProviderTests: XCTestCase {
 

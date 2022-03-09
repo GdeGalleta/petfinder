@@ -13,91 +13,58 @@
 		EA06CC2227D616E700ACE060 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA06CC2027D616E700ACE060 /* LaunchScreen.storyboard */; };
 		EA06CC3727D616E800ACE060 /* PetfinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC3627D616E800ACE060 /* PetfinderUITests.swift */; };
 		EA06CC4827D617CC00ACE060 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC4727D617CC00ACE060 /* ApiProvider.swift */; };
-		EA06CC4927D617CC00ACE060 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC4727D617CC00ACE060 /* ApiProvider.swift */; };
 		EA06CC4B27D617E800ACE060 /* ApiResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC4A27D617E800ACE060 /* ApiResource.swift */; };
-		EA06CC4C27D617E800ACE060 /* ApiResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC4A27D617E800ACE060 /* ApiResource.swift */; };
 		EA06CC4E27D617FC00ACE060 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC4D27D617FC00ACE060 /* ApiError.swift */; };
-		EA06CC4F27D617FC00ACE060 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC4D27D617FC00ACE060 /* ApiError.swift */; };
-		EA06CC5127D6184400ACE060 /* ApiProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC5027D6184400ACE060 /* ApiProviderTests.swift */; };
 		EA06CC5527D6188300ACE060 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC5427D6188300ACE060 /* URLProtocolMock.swift */; };
-		EA06CC5727D618AE00ACE060 /* TestsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC5627D618AE00ACE060 /* TestsConstants.swift */; };
 		EA06CC5927D618DC00ACE060 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = EA06CC5827D618DC00ACE060 /* sample.json */; };
 		EA06CC5F27D629EE00ACE060 /* PetfinderApiResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC5E27D629EE00ACE060 /* PetfinderApiResource.swift */; };
-		EA06CC6027D629EE00ACE060 /* PetfinderApiResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC5E27D629EE00ACE060 /* PetfinderApiResource.swift */; };
 		EA06CC6227D62F5C00ACE060 /* token.json in Resources */ = {isa = PBXBuildFile; fileRef = EA06CC6127D62F5C00ACE060 /* token.json */; };
 		EA06CC6427D65AA800ACE060 /* PetfinderApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6327D65AA800ACE060 /* PetfinderApiProvider.swift */; };
-		EA06CC6527D65AA900ACE060 /* PetfinderApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6327D65AA800ACE060 /* PetfinderApiProvider.swift */; };
 		EA06CC6827D6683400ACE060 /* PetfinderAnimalsDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6727D6683400ACE060 /* PetfinderAnimalsDto.swift */; };
-		EA06CC6927D6683400ACE060 /* PetfinderAnimalsDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6727D6683400ACE060 /* PetfinderAnimalsDto.swift */; };
 		EA06CC6B27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6A27D6698900ACE060 /* PetfinderOAuthDto.swift */; };
-		EA06CC6C27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6A27D6698900ACE060 /* PetfinderOAuthDto.swift */; };
-		EA06CC6E27D66A7200ACE060 /* PetfinderApiProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6D27D66A7200ACE060 /* PetfinderApiProviderTests.swift */; };
 		EA06CC7027D66DCE00ACE060 /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = EA06CC6F27D66DCD00ACE060 /* animals.json */; };
-		EA06CC7227D66F2200ACE060 /* PetfinderApiProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7127D66F2200ACE060 /* PetfinderApiProviderMock.swift */; };
 		EA06CC7427D671DD00ACE060 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7327D671DD00ACE060 /* ApiKeys.swift */; };
-		EA06CC7527D671DD00ACE060 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7327D671DD00ACE060 /* ApiKeys.swift */; };
 		EA06CC7927D676BC00ACE060 /* StartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7827D676BC00ACE060 /* StartCoordinator.swift */; };
-		EA06CC7A27D676BC00ACE060 /* StartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7827D676BC00ACE060 /* StartCoordinator.swift */; };
 		EA06CC7C27D676D100ACE060 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7B27D676D100ACE060 /* MainCoordinator.swift */; };
-		EA06CC7D27D676D100ACE060 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7B27D676D100ACE060 /* MainCoordinator.swift */; };
 		EA06CC7F27D676F000ACE060 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7E27D676F000ACE060 /* FlowCoordinator.swift */; };
-		EA06CC8027D676F000ACE060 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7E27D676F000ACE060 /* FlowCoordinator.swift */; };
 		EA06CC8427D6777900ACE060 /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8327D6777900ACE060 /* AnimalListViewController.swift */; };
-		EA06CC8527D6777900ACE060 /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8327D6777900ACE060 /* AnimalListViewController.swift */; };
 		EA06CC8727D6779D00ACE060 /* AnimalListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8627D6779D00ACE060 /* AnimalListCoordinator.swift */; };
-		EA06CC8827D6779D00ACE060 /* AnimalListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8627D6779D00ACE060 /* AnimalListCoordinator.swift */; };
 		EA06CC8A27D677F500ACE060 /* AnimalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8927D677F500ACE060 /* AnimalListViewModel.swift */; };
-		EA06CC8B27D677F500ACE060 /* AnimalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8927D677F500ACE060 /* AnimalListViewModel.swift */; };
 		EA06CC8E27D679EF00ACE060 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8D27D679EF00ACE060 /* TabBarController.swift */; };
-		EA06CC8F27D679EF00ACE060 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC8D27D679EF00ACE060 /* TabBarController.swift */; };
 		EA06CC9127D67A6D00ACE060 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9027D67A6D00ACE060 /* TabBarCoordinator.swift */; };
-		EA06CC9227D67A6D00ACE060 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9027D67A6D00ACE060 /* TabBarCoordinator.swift */; };
 		EA06CC9527D67D9A00ACE060 /* OrganizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9427D67D9A00ACE060 /* OrganizationsViewController.swift */; };
-		EA06CC9627D67D9A00ACE060 /* OrganizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9427D67D9A00ACE060 /* OrganizationsViewController.swift */; };
 		EA06CC9827D67DA500ACE060 /* OrganizationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9727D67DA500ACE060 /* OrganizationsCoordinator.swift */; };
-		EA06CC9927D67DA500ACE060 /* OrganizationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9727D67DA500ACE060 /* OrganizationsCoordinator.swift */; };
 		EA06CC9B27D67DB200ACE060 /* OrganizationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9A27D67DB200ACE060 /* OrganizationsViewModel.swift */; };
-		EA06CC9C27D67DB200ACE060 /* OrganizationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC9A27D67DB200ACE060 /* OrganizationsViewModel.swift */; };
 		EA06CCA027D6809D00ACE060 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA06CCA327D6809D00ACE060 /* Localizable.strings */; };
 		EA06CCA127D6809D00ACE060 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA06CCA327D6809D00ACE060 /* Localizable.strings */; };
 		EA06CCA627D680C700ACE060 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCA527D680C700ACE060 /* String+Localized.swift */; };
-		EA06CCA727D680C700ACE060 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCA527D680C700ACE060 /* String+Localized.swift */; };
-		EA06CCA927D680E600ACE060 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCA827D680E600ACE060 /* ExtensionTests.swift */; };
 		EA06CCAC27D68B9000ACE060 /* AnimalListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCAB27D68B9000ACE060 /* AnimalListModel.swift */; };
-		EA06CCAD27D68B9000ACE060 /* AnimalListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCAB27D68B9000ACE060 /* AnimalListModel.swift */; };
 		EA06CCB027D68D0D00ACE060 /* AnimalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCAF27D68D0D00ACE060 /* AnimalListCell.swift */; };
-		EA06CCB127D68D0D00ACE060 /* AnimalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCAF27D68D0D00ACE060 /* AnimalListCell.swift */; };
 		EA06CCB427D68D9F00ACE060 /* PetfinderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB327D68D9F00ACE060 /* PetfinderImageView.swift */; };
-		EA06CCB527D68D9F00ACE060 /* PetfinderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB327D68D9F00ACE060 /* PetfinderImageView.swift */; };
 		EA06CCB727D690B500ACE060 /* AnimalsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB627D690B500ACE060 /* AnimalsQuery.swift */; };
-		EA06CCB827D690B500ACE060 /* AnimalsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB627D690B500ACE060 /* AnimalsQuery.swift */; };
 		EA06CCBA27D6992300ACE060 /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB927D6992300ACE060 /* Encodable+JSON.swift */; };
-		EA06CCBB27D6992300ACE060 /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCB927D6992300ACE060 /* Encodable+JSON.swift */; };
 		EA06CCBD27D771F000ACE060 /* PetfinderConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCBC27D771EF00ACE060 /* PetfinderConstants.swift */; };
-		EA06CCBE27D771F000ACE060 /* PetfinderConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCBC27D771EF00ACE060 /* PetfinderConstants.swift */; };
 		EA06CCC027D7808E00ACE060 /* PetfinderOrganizationsDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCBF27D7808D00ACE060 /* PetfinderOrganizationsDto.swift */; };
-		EA06CCC127D7808E00ACE060 /* PetfinderOrganizationsDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCBF27D7808D00ACE060 /* PetfinderOrganizationsDto.swift */; };
 		EA06CCC327D7822700ACE060 /* OrganizationsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCC227D7822700ACE060 /* OrganizationsQuery.swift */; };
-		EA06CCC427D7822700ACE060 /* OrganizationsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCC227D7822700ACE060 /* OrganizationsQuery.swift */; };
 		EA06CCC627D7839800ACE060 /* organizations.json in Resources */ = {isa = PBXBuildFile; fileRef = EA06CCC527D7839800ACE060 /* organizations.json */; };
 		EA06CCC927D78C2F00ACE060 /* OrganizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCC827D78C2F00ACE060 /* OrganizationModel.swift */; };
-		EA06CCCA27D78C2F00ACE060 /* OrganizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCC827D78C2F00ACE060 /* OrganizationModel.swift */; };
 		EA06CCCC27D7BFB300ACE060 /* UIColor+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCCB27D7BFB300ACE060 /* UIColor+Index.swift */; };
-		EA06CCCD27D7BFB300ACE060 /* UIColor+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCCB27D7BFB300ACE060 /* UIColor+Index.swift */; };
 		EA06CCCF27D7C78A00ACE060 /* UIApplication+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCCE27D7C78A00ACE060 /* UIApplication+Test.swift */; };
-		EA06CCD027D7C78A00ACE060 /* UIApplication+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCCE27D7C78A00ACE060 /* UIApplication+Test.swift */; };
 		EA06CCD227D7CC0E00ACE060 /* PetfinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCD127D7CC0E00ACE060 /* PetfinderViewController.swift */; };
-		EA06CCD327D7CC0E00ACE060 /* PetfinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCD127D7CC0E00ACE060 /* PetfinderViewController.swift */; };
 		EA06CCD827D8E4B900ACE060 /* Array+Duplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCD727D8E4B900ACE060 /* Array+Duplicates.swift */; };
-		EA06CCD927D8E4B900ACE060 /* Array+Duplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCD727D8E4B900ACE060 /* Array+Duplicates.swift */; };
 		EA06CCDC27D9109F00ACE060 /* types.json in Resources */ = {isa = PBXBuildFile; fileRef = EA06CCDA27D9109D00ACE060 /* types.json */; };
 		EA06CCDE27D914E900ACE060 /* PetfinderTypesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCDD27D914E900ACE060 /* PetfinderTypesDto.swift */; };
-		EA06CCDF27D914E900ACE060 /* PetfinderTypesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCDD27D914E900ACE060 /* PetfinderTypesDto.swift */; };
 		EA06CCE127D9207400ACE060 /* AnimalListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCE027D9207400ACE060 /* AnimalListViewModelTests.swift */; };
-		EA06CCE327D9238000ACE060 /* OrganizationsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCE227D9238000ACE060 /* OrganizationsViewModelTests.swift */; };
-		EA06CCE527D9253900ACE060 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCE427D9253900ACE060 /* CoordinatorTests.swift */; };
-		EA06CCE727D9314200ACE060 /* PetfinderImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCE627D9314200ACE060 /* PetfinderImageViewTests.swift */; };
 		EA06CCEA27D9318E00ACE060 /* pet.png in Resources */ = {isa = PBXBuildFile; fileRef = EA06CCE927D9318E00ACE060 /* pet.png */; };
+		EA06CCEB27D93C3500ACE060 /* PetfinderImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCE627D9314200ACE060 /* PetfinderImageViewTests.swift */; };
+		EA06CCEC27D93C3800ACE060 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCE427D9253900ACE060 /* CoordinatorTests.swift */; };
+		EA06CCED27D93C3B00ACE060 /* OrganizationsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCE227D9238000ACE060 /* OrganizationsViewModelTests.swift */; };
+		EA06CCEE27D93C4000ACE060 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCA827D680E600ACE060 /* ExtensionTests.swift */; };
+		EA06CCEF27D93C4400ACE060 /* PetfinderApiProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC6D27D66A7200ACE060 /* PetfinderApiProviderTests.swift */; };
+		EA06CCF027D93C4700ACE060 /* ApiProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC5027D6184400ACE060 /* ApiProviderTests.swift */; };
+		EA06CCF127D93C4900ACE060 /* TestsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC5627D618AE00ACE060 /* TestsConstants.swift */; };
+		EA06CCF227D93C4D00ACE060 /* PetfinderApiProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CC7127D66F2200ACE060 /* PetfinderApiProviderMock.swift */; };
+		EA06CCF427D93E1D00ACE060 /* AnimalListCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06CCF327D93E1D00ACE060 /* AnimalListCellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +145,7 @@
 		EA06CCE427D9253900ACE060 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 		EA06CCE627D9314200ACE060 /* PetfinderImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderImageViewTests.swift; sourceTree = "<group>"; };
 		EA06CCE927D9318E00ACE060 /* pet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pet.png; sourceTree = "<group>"; };
+		EA06CCF327D93E1D00ACE060 /* AnimalListCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +223,7 @@
 				EA06CCE227D9238000ACE060 /* OrganizationsViewModelTests.swift */,
 				EA06CCE427D9253900ACE060 /* CoordinatorTests.swift */,
 				EA06CCE627D9314200ACE060 /* PetfinderImageViewTests.swift */,
+				EA06CCF327D93E1D00ACE060 /* AnimalListCellTests.swift */,
 			);
 			path = PetfinderTests;
 			sourceTree = "<group>";
@@ -629,50 +598,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA06CC6027D629EE00ACE060 /* PetfinderApiResource.swift in Sources */,
+				EA06CCEC27D93C3800ACE060 /* CoordinatorTests.swift in Sources */,
+				EA06CCF027D93C4700ACE060 /* ApiProviderTests.swift in Sources */,
+				EA06CCF127D93C4900ACE060 /* TestsConstants.swift in Sources */,
+				EA06CCEF27D93C4400ACE060 /* PetfinderApiProviderTests.swift in Sources */,
+				EA06CCED27D93C3B00ACE060 /* OrganizationsViewModelTests.swift in Sources */,
 				EA06CC5527D6188300ACE060 /* URLProtocolMock.swift in Sources */,
-				EA06CCB827D690B500ACE060 /* AnimalsQuery.swift in Sources */,
-				EA06CCBB27D6992300ACE060 /* Encodable+JSON.swift in Sources */,
-				EA06CCCD27D7BFB300ACE060 /* UIColor+Index.swift in Sources */,
+				EA06CCEE27D93C4000ACE060 /* ExtensionTests.swift in Sources */,
+				EA06CCF427D93E1D00ACE060 /* AnimalListCellTests.swift in Sources */,
+				EA06CCEB27D93C3500ACE060 /* PetfinderImageViewTests.swift in Sources */,
 				EA06CCE127D9207400ACE060 /* AnimalListViewModelTests.swift in Sources */,
-				EA06CC7527D671DD00ACE060 /* ApiKeys.swift in Sources */,
-				EA06CC9C27D67DB200ACE060 /* OrganizationsViewModel.swift in Sources */,
-				EA06CC4C27D617E800ACE060 /* ApiResource.swift in Sources */,
-				EA06CC6527D65AA900ACE060 /* PetfinderApiProvider.swift in Sources */,
-				EA06CCAD27D68B9000ACE060 /* AnimalListModel.swift in Sources */,
-				EA06CC7A27D676BC00ACE060 /* StartCoordinator.swift in Sources */,
-				EA06CCA927D680E600ACE060 /* ExtensionTests.swift in Sources */,
-				EA06CC8827D6779D00ACE060 /* AnimalListCoordinator.swift in Sources */,
-				EA06CCD927D8E4B900ACE060 /* Array+Duplicates.swift in Sources */,
-				EA06CC8527D6777900ACE060 /* AnimalListViewController.swift in Sources */,
-				EA06CCDF27D914E900ACE060 /* PetfinderTypesDto.swift in Sources */,
-				EA06CCD027D7C78A00ACE060 /* UIApplication+Test.swift in Sources */,
-				EA06CC6C27D6698900ACE060 /* PetfinderOAuthDto.swift in Sources */,
-				EA06CCD327D7CC0E00ACE060 /* PetfinderViewController.swift in Sources */,
-				EA06CC6927D6683400ACE060 /* PetfinderAnimalsDto.swift in Sources */,
-				EA06CC6E27D66A7200ACE060 /* PetfinderApiProviderTests.swift in Sources */,
-				EA06CCE727D9314200ACE060 /* PetfinderImageViewTests.swift in Sources */,
-				EA06CCCA27D78C2F00ACE060 /* OrganizationModel.swift in Sources */,
-				EA06CCB527D68D9F00ACE060 /* PetfinderImageView.swift in Sources */,
-				EA06CCBE27D771F000ACE060 /* PetfinderConstants.swift in Sources */,
-				EA06CCE327D9238000ACE060 /* OrganizationsViewModelTests.swift in Sources */,
-				EA06CC5127D6184400ACE060 /* ApiProviderTests.swift in Sources */,
-				EA06CC4927D617CC00ACE060 /* ApiProvider.swift in Sources */,
-				EA06CCA727D680C700ACE060 /* String+Localized.swift in Sources */,
-				EA06CC8F27D679EF00ACE060 /* TabBarController.swift in Sources */,
-				EA06CCC127D7808E00ACE060 /* PetfinderOrganizationsDto.swift in Sources */,
-				EA06CCC427D7822700ACE060 /* OrganizationsQuery.swift in Sources */,
-				EA06CC4F27D617FC00ACE060 /* ApiError.swift in Sources */,
-				EA06CC8B27D677F500ACE060 /* AnimalListViewModel.swift in Sources */,
-				EA06CC8027D676F000ACE060 /* FlowCoordinator.swift in Sources */,
-				EA06CCB127D68D0D00ACE060 /* AnimalListCell.swift in Sources */,
-				EA06CC9927D67DA500ACE060 /* OrganizationsCoordinator.swift in Sources */,
-				EA06CC9227D67A6D00ACE060 /* TabBarCoordinator.swift in Sources */,
-				EA06CC5727D618AE00ACE060 /* TestsConstants.swift in Sources */,
-				EA06CCE527D9253900ACE060 /* CoordinatorTests.swift in Sources */,
-				EA06CC9627D67D9A00ACE060 /* OrganizationsViewController.swift in Sources */,
-				EA06CC7D27D676D100ACE060 /* MainCoordinator.swift in Sources */,
-				EA06CC7227D66F2200ACE060 /* PetfinderApiProviderMock.swift in Sources */,
+				EA06CCF227D93C4D00ACE060 /* PetfinderApiProviderMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
