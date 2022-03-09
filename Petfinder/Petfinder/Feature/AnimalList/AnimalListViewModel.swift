@@ -53,7 +53,7 @@ public final class AnimalListViewModel: AnimalListViewModelType {
                         if let identifier = $0.identifier,
                            let name = $0.name {
                             var photo: AnimalListPhotoModel?
-                            if let photoUrl = $0.photos?.first?.small {
+                            if let photoUrl = $0.photos?.first?.large {
                                 photo = AnimalListPhotoModel(url: URL(string: photoUrl))
                             }
                             return AnimalListModel(identifier: identifier,

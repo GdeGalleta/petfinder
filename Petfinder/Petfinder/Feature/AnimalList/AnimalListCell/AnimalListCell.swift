@@ -32,6 +32,19 @@ public final class AnimalListCell: UITableViewCell {
         return label
     }()
 
+    private let labelDistance: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .right
+        label.setContentCompressionResistancePriority(.required, for: .vertical)
+        label.setContentCompressionResistancePriority(.required, for: .horizontal)
+        label.numberOfLines = 0
+        label.font = UIFont.boldSystemFont(ofSize: 15.0)
+        label.textColor = .black
+        label.accessibilityIdentifier = "default"
+        return label
+    }()
+
     private let labelTitleAge: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -116,6 +129,7 @@ public final class AnimalListCell: UITableViewCell {
         stack.spacing = 1
         stack.addArrangedSubview(labelName)
         stack.addArrangedSubview(stackInfo)
+        stack.addArrangedSubview(labelDistance)
         return stack
     }()
 
@@ -173,7 +187,8 @@ public final class AnimalListCell: UITableViewCell {
 extension AnimalListCell {
 
     public func setup(with model: AnimalListModel) {
-        labelName.text = model.name + " (\(String(format: "%.2f", model.distance ?? 0.0)) miles from you)"
+        labelName.text = model.name
+        labelDistance.text = "\(String(format: "%.2f", model.distance ?? 0.0)) \("kMilesFromYou".localized)"
         labelAge.text = model.age ?? "-"
         labelGender.text = model.gender ?? "-"
         labelSize.text = model.size ?? "-"
@@ -191,31 +206,34 @@ extension AnimalListCell {
         viewContainer.addSubview(imagePhoto)
         viewContainer.addSubview(stackFavorite)
 
-        let rColor = UIColor.purple
+        let rColor = UIColor.randomLight
         viewContainer.backgroundColor = rColor
         viewContainer.layer.borderWidth = 2
         viewContainer.layer.borderColor = rColor.cgColor
         viewContainer.layer.cornerRadius = 10
         viewContainer.layer.masksToBounds = true
 
+        imagePhoto.layer.cornerRadius = 10
+        imagePhoto.layer.masksToBounds = true
+
         stackInfo.layer.cornerRadius = 10
         stackInfo.layer.masksToBounds = true
 
         NSLayoutConstraint.activate([
-            viewContainer.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 2.5),
-            viewContainer.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -2.5),
-            viewContainer.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 2.5),
-            viewContainer.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -2.5),
+            viewContainer.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 2),
+            viewContainer.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -2),
+            viewContainer.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 2),
+            viewContainer.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -2),
 
             imagePhoto.widthAnchor.constraint(equalToConstant: 100),
             imagePhoto.heightAnchor.constraint(greaterThanOrEqualTo: imagePhoto.widthAnchor),
-            imagePhoto.topAnchor.constraint(equalTo: viewContainer.topAnchor),
-            imagePhoto.bottomAnchor.constraint(equalTo: viewContainer.bottomAnchor),
-            imagePhoto.leadingAnchor.constraint(equalTo: viewContainer.leadingAnchor),
+            imagePhoto.topAnchor.constraint(equalTo: viewContainer.topAnchor, constant: 2),
+            imagePhoto.bottomAnchor.constraint(equalTo: viewContainer.bottomAnchor, constant: -2),
+            imagePhoto.leadingAnchor.constraint(equalTo: viewContainer.leadingAnchor, constant: 2),
 
             stackFavorite.leadingAnchor.constraint(equalTo: imagePhoto.trailingAnchor, constant: 10),
-            stackFavorite.topAnchor.constraint(equalTo: viewContainer.topAnchor, constant: 10),
-            stackFavorite.bottomAnchor.constraint(equalTo: viewContainer.bottomAnchor, constant: -10),
+            stackFavorite.topAnchor.constraint(equalTo: viewContainer.topAnchor, constant: 2),
+            stackFavorite.bottomAnchor.constraint(equalTo: viewContainer.bottomAnchor, constant: -2),
             stackFavorite.trailingAnchor.constraint(equalTo: viewContainer.trailingAnchor, constant: -10)
         ])
     }

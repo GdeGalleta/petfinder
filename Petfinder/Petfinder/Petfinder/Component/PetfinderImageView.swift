@@ -15,11 +15,13 @@ public class PetfinderImageView: UIImageView {
 
     public func load(url: URL, completion: (() -> Void)? = nil) {
         DispatchQueue.global().async { [weak self] in
-            if let data = try? self?.loadImageData(url: url) {
+            guard let self = self else { return }
+            if let data = try? self.loadImageData(url: url) {
                 if let image = UIImage(data: data) {
+
                     DispatchQueue.main.async { [weak self] in
-                        self?.image = image
-                        completion?()
+                        guard let self = self else { return }
+                        self.image = image
                     }
                 }
             }

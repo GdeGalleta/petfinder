@@ -12,5 +12,6 @@
 "kAge"="Age";
 "kGender"="Gender";
 "kSize"="Size";
-"kRefreshing"="Refreshing";
 "kAnimalsFromYou"="Animals to adopt about 1 hour from you";
+"kEmailBody"="<p>Hello, I'm looking to adopting a friend!</p>";
+"kMilesFromYou"="Miles from you";

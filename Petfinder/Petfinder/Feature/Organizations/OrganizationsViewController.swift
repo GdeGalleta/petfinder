@@ -9,15 +9,16 @@ import UIKit
 import MapKit
 import CoreLocation
 import Combine
+import MessageUI
 
-public final class OrganizationsViewController: UIViewController {
+public final class OrganizationsViewController: PetfinderViewController {
     // MARK: - Properties
     private var cancellables = Set<AnyCancellable>()
 
     private let viewModel: OrganizationsViewModelType
     private let coordinator: OrganizationsCoordinatorType?
 
-    private let coordScale = 10000.0
+    private let coordScale = 20000.0
     private lazy var coordRegion = MKCoordinateRegion(center: K.defaultLocation, latitudinalMeters: coordScale, longitudinalMeters: coordScale)
     private lazy var viewMap: MKMapView = {
         let map = MKMapView()
@@ -55,7 +56,7 @@ extension OrganizationsViewController {
     private func setupLayout() {
         title = "kOrganizations".localized
 
-        view.backgroundColor = .white
+        view.backgroundColor = K.Color.backgroundDark
 
         view.addSubview(viewMap)
 
@@ -124,11 +125,40 @@ extension OrganizationsViewController: MKMapViewDelegate {
 
         if annotationView == nil {
             annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            annotationView!.canShowCallout = true
+
+            if let recipient = annotation.subtitle as? String {
+                let sendMessageAction = UIAction(handler: { [weak self] action in
+                    self?.sendEmail(recipient: recipient)
+                })
+                annotationView?.rightCalloutAccessoryView = UIButton(type: .infoDark, primaryAction: sendMessageAction)
+            }
+            annotationView?.canShowCallout = true
         } else {
-            annotationView!.annotation = annotation
+            annotationView?.annotation = annotation
+        }
+
+        if let annotationViewValue = annotationView as? MKPinAnnotationView {
+            annotationViewValue.pinTintColor = K.Color.mapPinColor
         }
 
         return annotationView
+    }
+
+    func sendEmail(recipient: String) {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients([recipient])
+            mail.setMessageBody("kEmailBody".localized, isHTML: true)
+            present(mail, animated: true)
+        } else {
+            // show failure alert
+        }
+    }
+}
+
+extension OrganizationsViewController: MFMailComposeViewControllerDelegate {
+    public func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
     }
 }

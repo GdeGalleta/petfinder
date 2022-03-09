@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-public final class AnimalListViewController: UIViewController {
+public final class AnimalListViewController: PetfinderViewController {
     // MARK: - Properties
     private var cancellables = Set<AnyCancellable>()
 
@@ -22,7 +22,8 @@ public final class AnimalListViewController: UIViewController {
 
     private let refreshControl: UIRefreshControl = {
         let control = UIRefreshControl()
-        control.tintColor = .black
+        control.tintColor = K.Color.textLight
+        control.addTarget(self, action: #selector(fetchData), for: .valueChanged)
         return control
     }()
 
@@ -32,7 +33,7 @@ public final class AnimalListViewController: UIViewController {
         table.delegate = self
         table.separatorStyle = .none
         table.backgroundColor = .clear
-        table.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
+        table.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 200, right: 0)
         table.register(AnimalListCell.self, forCellReuseIdentifier: AnimalListCell.identifier)
         table.accessibilityIdentifier = "default"
         return table
@@ -43,6 +44,7 @@ public final class AnimalListViewController: UIViewController {
         controller.searchBar.placeholder = "kSearchByName".localized
         controller.searchBar.barStyle = .black
         controller.searchBar.accessibilityTraits = UIAccessibilityTraits.searchField
+        controller.searchBar.tintColor = K.Color.textLight
         controller.searchBar.delegate = self
         controller.obscuresBackgroundDuringPresentation = false
         return controller
@@ -74,13 +76,10 @@ extension AnimalListViewController {
     private func setupLayout() {
         title = "kAnimals".localized
 
-        view.backgroundColor = .white
+        view.backgroundColor = K.Color.backgroundDark
 
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
-
-        refreshControl.attributedTitle = NSAttributedString(string: "kRefreshing")
-        refreshControl.addTarget(self, action: #selector(fetchData), for: .valueChanged)
 
         view.addSubview(tableView)
         tableView.addSubview(refreshControl)
@@ -141,9 +140,14 @@ extension AnimalListViewController: UITableViewDelegate {
     }
 
     public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        // guard !UIApplication.isRunningTest else { return }
+        guard !UIApplication.isRunningTest else { return }
         if indexPath.row == viewModel.dataSource.count-1 {
             viewModel.fetchMoreAnimals()
+        }
+
+        cell.alpha = 0
+        UIView.animate(withDuration: 0.2) {
+            cell.alpha = 1.0
         }
     }
 }
