@@ -66,7 +66,7 @@ public final class AnimalListViewModel: AnimalListViewModelType {
             .compactMap({ (response: PetfinderTypesDto) -> [String] in
                 // Conversion from PetfinderTypesDto to String
                 var converted: [String] = ["kAll".localized]
-                if let results = response.types {
+                if let results = response.types?.prefix(3) {
                     converted+=results.compactMap({
                         if let name = $0.name, !name.isEmpty { return name }
                         return nil

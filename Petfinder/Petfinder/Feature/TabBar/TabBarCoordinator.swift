@@ -21,6 +21,7 @@ public final class TabBarCoordinator: FlowCoordinator, TabBarCoordinatorType {
 
     public func start(animated: Bool) {
         let tabBarController = TabBarController(coordinator: self)
+        tabBarController.tabBar.accessibilityIdentifier = K.AccessIden.tabBarStart
 
         // AnimalList
         let animalListTabBarItem = UITabBarItem(title: "kAnimals".localized,

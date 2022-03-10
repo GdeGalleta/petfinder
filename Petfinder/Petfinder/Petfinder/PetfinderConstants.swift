@@ -21,7 +21,18 @@ public struct K {
         public static let mapPinColor: UIColor = textLight
     }
     public struct AccessIden {
+        public static let tabBarStart = "tabBarStart"
+
+        public static let navigationBarAnimalList = "navigationBarAnimalList"
         public static let tabBarButtonAnimalList = "tabBarButtonAnimalList"
         public static let tabBarButtonOrganizations = "tabBarButtonOrganizations"
+
+        public static let searchBarAnimalList = "searchBarAnimalList"
+        public static let tableAnimalList = "tableAnimalList"
+        public static let tableCellAnimalList = "tableCellAnimalList"
+
+        public static let navigationBarOrganizations = "navigationBarOrganizations"
+        public static let mapOrganizations = "mapOrganizations"
+        public static let mapOrganizationsAnnotation = "mapOrganizationsAnnotation"
     }
 }

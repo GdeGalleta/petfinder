@@ -28,6 +28,7 @@ public final class OrganizationsViewController: PetfinderViewController {
         map.isScrollEnabled = true
         map.setRegion(self.coordRegion, animated: false)
         map.delegate = self
+        map.accessibilityIdentifier = K.AccessIden.mapOrganizations
         return map
     }()
 
@@ -54,6 +55,7 @@ public final class OrganizationsViewController: PetfinderViewController {
 
 extension OrganizationsViewController {
     private func setupLayout() {
+        navigationController?.navigationBar.accessibilityIdentifier = K.AccessIden.navigationBarOrganizations
         navigationItem.title = "kOrganizationsTitle".localized
 
         view.backgroundColor = K.Color.backgroundDark
@@ -132,6 +134,7 @@ extension OrganizationsViewController: MKMapViewDelegate {
 
         if annotationView == nil {
             annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView?.accessibilityIdentifier = K.AccessIden.mapOrganizationsAnnotation
 
             if let recipient = annotation.subtitle as? String {
                 let sendMessageAction = UIAction(handler: { [weak self] _ in

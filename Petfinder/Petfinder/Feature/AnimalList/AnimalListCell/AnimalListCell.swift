@@ -27,7 +27,7 @@ public final class AnimalListCell: UITableViewCell {
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
         label.numberOfLines = 0
         label.font = UIFont.boldSystemFont(ofSize: 20.0)
-        label.textColor = .black
+        label.textColor = K.Color.textDark
         label.accessibilityIdentifier = "default"
         return label
     }()
@@ -40,7 +40,7 @@ public final class AnimalListCell: UITableViewCell {
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
         label.numberOfLines = 0
         label.font = UIFont.boldSystemFont(ofSize: 15.0)
-        label.textColor = .black
+        label.textColor = K.Color.textDark
         label.accessibilityIdentifier = "default"
         return label
     }()
@@ -52,7 +52,7 @@ public final class AnimalListCell: UITableViewCell {
         label.setContentCompressionResistancePriority(UILayoutPriority(1000), for: .horizontal)
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 15.0)
-        label.textColor = .white
+        label.textColor = K.Color.textLight
         label.accessibilityIdentifier = "default"
         label.text = "kAge".localized
         return label
@@ -65,7 +65,7 @@ public final class AnimalListCell: UITableViewCell {
         label.setContentCompressionResistancePriority(UILayoutPriority(1000), for: .horizontal)
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 15.0)
-        label.textColor = .white
+        label.textColor = K.Color.textLight
         label.accessibilityIdentifier = "default"
         return label
     }()
@@ -77,7 +77,7 @@ public final class AnimalListCell: UITableViewCell {
         label.setContentCompressionResistancePriority(UILayoutPriority(999), for: .horizontal)
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 15.0)
-        label.textColor = .white
+        label.textColor = K.Color.textLight
         label.accessibilityIdentifier = "default"
         label.text = "kGender".localized
         return label
@@ -90,7 +90,7 @@ public final class AnimalListCell: UITableViewCell {
         label.setContentCompressionResistancePriority(UILayoutPriority(999), for: .horizontal)
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 15.0)
-        label.textColor = .white
+        label.textColor = K.Color.textLight
         label.accessibilityIdentifier = "default"
         return label
     }()
@@ -102,7 +102,7 @@ public final class AnimalListCell: UITableViewCell {
         label.setContentCompressionResistancePriority(UILayoutPriority(998), for: .horizontal)
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 15.0)
-        label.textColor = .white
+        label.textColor = K.Color.textLight
         label.accessibilityIdentifier = "default"
         label.text = "kSize".localized
         return label
@@ -115,7 +115,7 @@ public final class AnimalListCell: UITableViewCell {
         label.setContentCompressionResistancePriority(UILayoutPriority(998), for: .horizontal)
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 15.0)
-        label.textColor = .white
+        label.textColor = K.Color.textLight
         label.accessibilityIdentifier = "default"
         return label
     }()
@@ -140,7 +140,7 @@ public final class AnimalListCell: UITableViewCell {
         stack.distribution = .fillEqually
         stack.alignment = .center
         stack.spacing = 0
-        stack.backgroundColor = .black
+        stack.backgroundColor = K.Color.backgroundDark
 
         let stackAge = UIStackView(arrangedSubviews: [labelTitleAge, labelAge])
         stackAge.translatesAutoresizingMaskIntoConstraints = false
@@ -196,6 +196,7 @@ extension AnimalListCell {
         labelGender.text = model.gender ?? "-"
         labelSize.text = model.size ?? "-"
 
+        imagePhoto.image = UIImage(named: "logo_paw")
         if let url = model.photo?.url {
             imagePhoto.load(url: url)
         }
@@ -215,6 +216,8 @@ extension AnimalListCell {
         viewContainer.layer.cornerRadius = 10
         viewContainer.layer.masksToBounds = true
 
+        imagePhoto.layer.borderWidth = 2
+        imagePhoto.layer.borderColor = K.Color.backgroundDark.cgColor
         imagePhoto.layer.cornerRadius = 10
         imagePhoto.layer.masksToBounds = true
 

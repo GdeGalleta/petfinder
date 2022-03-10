@@ -41,7 +41,7 @@ public final class AnimalListViewController: PetfinderViewController {
         table.backgroundColor = .clear
         table.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 200, right: 0)
         table.register(AnimalListCell.self, forCellReuseIdentifier: AnimalListCell.identifier)
-        table.accessibilityIdentifier = "default"
+        table.accessibilityIdentifier = K.AccessIden.tableAnimalList
         table.tableFooterView = footerSpinner
         return table
     }()
@@ -53,6 +53,7 @@ public final class AnimalListViewController: PetfinderViewController {
         controller.searchBar.accessibilityTraits = UIAccessibilityTraits.searchField
         controller.searchBar.tintColor = K.Color.textLight
         controller.searchBar.delegate = self
+        controller.searchBar.accessibilityIdentifier = K.AccessIden.searchBarAnimalList
         controller.obscuresBackgroundDuringPresentation = false
         return controller
     }()
@@ -81,6 +82,7 @@ public final class AnimalListViewController: PetfinderViewController {
 
 extension AnimalListViewController {
     private func setupLayout() {
+        navigationController?.navigationBar.accessibilityIdentifier = K.AccessIden.navigationBarAnimalList
         navigationItem.title = "kAnimalListTitle".localized
 
         view.backgroundColor = K.Color.backgroundDark
@@ -135,7 +137,7 @@ extension AnimalListViewController {
                 let cell = tableView.dequeueReusableCell(withIdentifier: AnimalListCell.identifier, for: indexPath) as? AnimalListCell
                 cell?.setup(with: model)
                 cell?.cellColor = UIColor.colorForIndex(indexPath.row, overR: true)
-                cell?.accessibilityIdentifier = "default"
+                cell?.accessibilityIdentifier = K.AccessIden.tableCellAnimalList
                 return cell
             })
     }

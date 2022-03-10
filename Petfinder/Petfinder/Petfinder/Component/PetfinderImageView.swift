@@ -13,15 +13,19 @@ public class PetfinderImageView: UIImageView {
         return try? Data(contentsOf: url)
     }
 
-    public func load(url: URL, completion: (() -> Void)? = nil) {
+    public func load(url: URL, animated: Bool = true, completion: (() -> Void)? = nil) {
         DispatchQueue.global().async { [weak self] in
             guard let self = self else { return }
             if let data = try? self.loadImageData(url: url) {
                 if let image = UIImage(data: data) {
                     DispatchQueue.main.async { [weak self] in
                         guard let self = self else { return }
-                        self.image = image
-                        completion?()
+                        let duration = animated ? 0.5: 0.0
+                        UIView.transition(with: self, duration: duration, options: .transitionFlipFromBottom, animations: { [weak self] in
+                            guard let self = self else { return }
+                            self.image = image
+                            completion?()
+                        }, completion: nil)
                     }
                 }
             }
