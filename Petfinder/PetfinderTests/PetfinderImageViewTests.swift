@@ -27,7 +27,7 @@ class PetfinderImageViewTests: XCTestCase {
             }
         }
 
-        wait(for: [expectation0], timeout: 5)
+        wait(for: [expectation0], timeout: TestsConstants.defaultTimeout)
     }
 
     private class UIImageViewMock: PetfinderImageView {

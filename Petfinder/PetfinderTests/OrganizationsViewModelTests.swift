@@ -64,6 +64,6 @@ class OrganizationsViewModelTests: XCTestCase {
 
         viewModel!.fetchOrganizations()
 
-        wait(for: [expectation0], timeout: 5)
+        wait(for: [expectation0], timeout: TestsConstants.defaultTimeout)
     }
 }

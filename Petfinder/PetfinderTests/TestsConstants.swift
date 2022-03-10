@@ -12,6 +12,8 @@ public struct TestsConstants {
 
     static var isOfflineTest = true
 
+    static let defaultTimeout = 15.0
+
     static var testsBundle: Bundle { return Bundle(for: TestsConstants.Class.self) }
 
     // MARK: - URLSession

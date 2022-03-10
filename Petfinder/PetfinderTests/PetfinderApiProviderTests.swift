@@ -65,7 +65,7 @@ class PetfinderApiProviderTests: XCTestCase {
             }
             .store(in: &cancellables)
 
-        wait(for: [expectation0, expectation1], timeout: 5)
+        wait(for: [expectation0, expectation1], timeout: TestsConstants.defaultTimeout)
     }
 
     func test_fetchAnimals() {
@@ -98,7 +98,7 @@ class PetfinderApiProviderTests: XCTestCase {
             }
             .store(in: &cancellables)
 
-        wait(for: [expectation0, expectation1], timeout: 5)
+        wait(for: [expectation0, expectation1], timeout: TestsConstants.defaultTimeout)
     }
 
     func test_fetchOrganizations() {
@@ -131,7 +131,7 @@ class PetfinderApiProviderTests: XCTestCase {
             }
             .store(in: &cancellables)
 
-        wait(for: [expectation0, expectation1], timeout: 5)
+        wait(for: [expectation0, expectation1], timeout: TestsConstants.defaultTimeout)
     }
 
     func test_fetchTypes() {
@@ -164,6 +164,6 @@ class PetfinderApiProviderTests: XCTestCase {
             }
             .store(in: &cancellables)
 
-        wait(for: [expectation0, expectation1], timeout: 5)
+        wait(for: [expectation0, expectation1], timeout: TestsConstants.defaultTimeout)
     }
 }

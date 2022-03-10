@@ -74,7 +74,7 @@ class CharacterListViewModelTests: XCTestCase {
 
         viewModel!.fetchAnimals()
 
-        wait(for: [expectation0], timeout: 5)
+        wait(for: [expectation0], timeout: TestsConstants.defaultTimeout)
     }
 
     func test_fetchTypes() {
@@ -106,6 +106,6 @@ class CharacterListViewModelTests: XCTestCase {
 
         viewModel!.fetchTypes()
 
-        wait(for: [expectation0], timeout: 5)
+        wait(for: [expectation0], timeout: TestsConstants.defaultTimeout)
     }
 }

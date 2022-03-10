@@ -10,7 +10,7 @@ import XCTest
 
 class PetfinderUITests: XCTestCase {
 
-    private let timeout = 5.0
+    private let timeout = 15.0
 
     override func setUpWithError() throws {
         continueAfterFailure = false

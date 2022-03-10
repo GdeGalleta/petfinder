@@ -54,7 +54,7 @@ class ApiProviderTests: XCTestCase {
             }
             .store(in: &cancellables)
 
-        wait(for: [expectation0, expectation1], timeout: 5)
+        wait(for: [expectation0, expectation1], timeout: TestsConstants.defaultTimeout)
     }
 
     func test_fetchSampleErrorInvalidURL() {
@@ -86,7 +86,7 @@ class ApiProviderTests: XCTestCase {
             }
             .store(in: &cancellables)
 
-        wait(for: [expectation0, expectation1], timeout: 5)
+        wait(for: [expectation0, expectation1], timeout: TestsConstants.defaultTimeout)
     }
 
     func test_fetchSampleErrorUnknownError() {
@@ -118,6 +118,6 @@ class ApiProviderTests: XCTestCase {
             }
             .store(in: &cancellables)
 
-        wait(for: [expectation0, expectation1], timeout: 5)
+        wait(for: [expectation0, expectation1], timeout: TestsConstants.defaultTimeout)
     }
 }
