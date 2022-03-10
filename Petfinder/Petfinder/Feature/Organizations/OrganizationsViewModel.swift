@@ -58,28 +58,8 @@ public final class OrganizationsViewModel: OrganizationsViewModelType {
                 // Checking if next page exists
                 hasMoreData = query.page + 1 <= response.pagination?.totalPages ?? 0
 
-                // Conversion from PetfinderOrganizationsOrganizationDto to OrganizationModel
-                var converted: [OrganizationModel] = []
-                if let results = response.organizations {
-                    converted+=results.compactMap({
-                        if let identifier = $0.identifier,
-                           let name = $0.name,
-                           let email = $0.email,
-                           let country = $0.address?.country, !country.isEmpty,
-                           let postcode = $0.address?.postcode, !postcode.isEmpty,
-                           let state = $0.address?.state, !state.isEmpty,
-                           let city = $0.address?.city, !city.isEmpty,
-                           let address = $0.address?.address1 ?? $0.address?.address2, !address.isEmpty {
-                            let completeAddress = "\(address) \(city) \(state) \(postcode) \(country)"
-                            return OrganizationModel(identifier: identifier,
-                                                     name: name,
-                                                     email: email,
-                                                     address: completeAddress)
-                        }
-                        return nil
-                    })
-                }
-                return converted
+                let factory = OrganizationModelFactory()
+                return factory.decode(dto: response)
             })
             .sink { [weak self] completion in
                 guard let self = self else { return }

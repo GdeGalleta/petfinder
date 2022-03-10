@@ -164,7 +164,7 @@ public final class AnimalListCell: UITableViewCell {
         image.translatesAutoresizingMaskIntoConstraints = false
         image.clipsToBounds = true
         image.contentMode = .scaleAspectFill
-        image.image = UIImage(named: "logo_paw")
+        image.image = UIImage(named: "logo_placeholder")
         image.accessibilityIdentifier = "default"
         return image
     }()
@@ -196,7 +196,7 @@ extension AnimalListCell {
         labelGender.text = model.gender ?? "-"
         labelSize.text = model.size ?? "-"
 
-        imagePhoto.image = UIImage(named: "logo_paw")
+        imagePhoto.image = UIImage(named: "logo_placeholder")
         if let url = model.photo?.url {
             imagePhoto.load(url: url)
         }
