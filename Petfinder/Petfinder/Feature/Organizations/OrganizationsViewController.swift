@@ -13,7 +13,7 @@ import MessageUI
 
 public final class OrganizationsViewController: PetfinderViewController {
     // MARK: - Properties
-    private var cancellables = Set<AnyCancellable>()
+    public var cancellables = Set<AnyCancellable>()
 
     private let viewModel: OrganizationsViewModelType
     private let coordinator: OrganizationsCoordinatorType?
@@ -121,6 +121,13 @@ extension OrganizationsViewController {
                 }
             })
         }
+    }
+}
+
+extension OrganizationsViewController: ViewControllerErrorReportable {
+
+    public var baseViewModel: ViewModelErrorReportable {
+        get { return self.viewModel }
     }
 }
 

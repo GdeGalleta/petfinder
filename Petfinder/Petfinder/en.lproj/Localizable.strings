@@ -7,6 +7,8 @@
 */
 
 "kAll"="All";
+"kAccept"="Accept";
+"kSomethingHasGoneWrong"="Something has gone wrong";
 "kAnimalListTitle"="Find your new friend";
 "kOrganizationsTitle"="Find your organization";
 "kAnimals"="Animals";
@@ -18,3 +20,4 @@
 "kAnimalsFromYou"="Animals to adopt about 1 hour from you";
 "kEmailBody"="<p>Hello, I'm looking to adopting a friend!</p>";
 "kMilesFromYou"="Miles from you";
+"kNoResults"="No animals found for your search";

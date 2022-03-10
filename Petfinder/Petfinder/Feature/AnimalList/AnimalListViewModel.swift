@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-public protocol AnimalListViewModelType {
+public protocol AnimalListViewModelType: ViewModelErrorReportable {
 
     var animalTypes: [String] { get }
     var animalTypesPublished: Published<[String]> { get }
@@ -28,7 +28,7 @@ public protocol AnimalListViewModelType {
     func fetchMoreAnimals()
 }
 
-public final class AnimalListViewModel: AnimalListViewModelType {
+public final class AnimalListViewModel: ViewModelErrorReporter, AnimalListViewModelType {
 
     private var cancellables = Set<AnyCancellable>()
 
@@ -97,7 +97,8 @@ public final class AnimalListViewModel: AnimalListViewModelType {
             .sink { [weak self] completion in
                 guard let self = self else { return }
                 switch completion {
-                case .failure:
+                case .failure(let error):
+                    self.errorMessage = error.errorDescription
                     self.dataSource = []
                 case .finished:
                     break
@@ -110,6 +111,10 @@ public final class AnimalListViewModel: AnimalListViewModelType {
                 dataSourceValue.append(contentsOf: response)
                 dataSourceValue.removeDuplicates()
                 self.dataSource = dataSourceValue
+
+                if self.dataSource.isEmpty {
+                    self.errorMessage = "kNoResults".localized
+                }
             }
             .store(in: &cancellables)
     }

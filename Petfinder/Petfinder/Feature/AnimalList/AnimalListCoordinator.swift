@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol AnimalListCoordinatorType: AnyObject {
+public protocol AnimalListCoordinatorType: FlowCoordinatorType {
 
 }
 

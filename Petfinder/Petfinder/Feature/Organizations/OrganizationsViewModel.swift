@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-public protocol OrganizationsViewModelType {
+public protocol OrganizationsViewModelType: ViewModelErrorReportable {
     var dataSource: [OrganizationModel] { get }
     var dataSourcePublished: Published<[OrganizationModel]> { get }
     var dataSourcePublisher: Published<[OrganizationModel]>.Publisher { get }
@@ -21,7 +21,7 @@ public protocol OrganizationsViewModelType {
     func fetchMoreOrganizations()
 }
 
-public final class OrganizationsViewModel: OrganizationsViewModelType {
+public final class OrganizationsViewModel: ViewModelErrorReporter, OrganizationsViewModelType {
 
     private var cancellables = Set<AnyCancellable>()
 
@@ -64,7 +64,8 @@ public final class OrganizationsViewModel: OrganizationsViewModelType {
             .sink { [weak self] completion in
                 guard let self = self else { return }
                 switch completion {
-                    case .failure:
+                    case .failure(let error):
+                        self.errorMessage = error.errorDescription
                         self.dataSource = []
                     case .finished:
                         break

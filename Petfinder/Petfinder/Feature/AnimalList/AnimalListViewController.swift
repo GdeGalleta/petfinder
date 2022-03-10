@@ -9,10 +9,11 @@ import UIKit
 import Combine
 
 public final class AnimalListViewController: PetfinderViewController {
-    // MARK: - Properties
-    private var cancellables = Set<AnyCancellable>()
 
-    private let viewModel: AnimalListViewModelType
+    // MARK: - Properties
+    public var cancellables = Set<AnyCancellable>()
+    public var viewModel: AnimalListViewModelType
+
     private let coordinator: AnimalListCoordinatorType?
 
     private enum Section: CaseIterable { case animals }
@@ -147,6 +148,13 @@ extension AnimalListViewController {
         snapshot.appendSections([.animals])
         snapshot.appendItems(viewModel.dataSource)
         dataSource.apply(snapshot, animatingDifferences: true)
+    }
+}
+
+extension AnimalListViewController: ViewControllerErrorReportable {
+
+    public var baseViewModel: ViewModelErrorReportable {
+        get { return self.viewModel }
     }
 }
 

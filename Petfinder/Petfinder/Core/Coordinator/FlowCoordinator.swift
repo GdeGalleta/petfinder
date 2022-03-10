@@ -7,6 +7,10 @@
 
 import Foundation
 
+public protocol FlowCoordinatorType: AnyObject {
+
+}
+
 public protocol FlowCoordinator {
     func start(animated: Bool)
     func coordinate(to coordinator: FlowCoordinator, animated: Bool)

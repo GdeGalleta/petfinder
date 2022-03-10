@@ -9,10 +9,12 @@ import UIKit
 
 public class PetfinderViewController: UIViewController {
 
+    // MARK: - Properties
     public override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
 
+    // MARK: - Lifecycle
     public override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,5 +26,9 @@ public class PetfinderViewController: UIViewController {
         navigationController?.navigationBar.tintColor = K.Color.textLight
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
+
+        if let alertTypeViewController = self as? ViewControllerErrorReportable {
+            alertTypeViewController.bindAlert()
+        }
     }
 }
