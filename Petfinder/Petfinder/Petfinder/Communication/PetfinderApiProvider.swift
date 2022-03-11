@@ -8,6 +8,11 @@
 import Foundation
 import Combine
 
+private struct PetfinderApiProviderTokenCache {
+    static var token: PetfinderOAuthDto?
+    static var timestamp: Double?
+}
+
 public class PetfinderApiProvider {
 
     private var cancellables: Set<AnyCancellable> = []
@@ -19,8 +24,31 @@ public class PetfinderApiProvider {
     }
 
     public func fetchToken() -> AnyPublisher<PetfinderOAuthDto, ApiError> {
+        // Get token from cache
+        if let token = PetfinderApiProviderTokenCache.token,
+           let timestamp = PetfinderApiProviderTokenCache.timestamp,
+           timestamp > Date().timeIntervalSince1970 {
+            return Just(token)
+                .setFailureType(to: ApiError.self)
+                .eraseToAnyPublisher()
+        }
+
+        // Get token from API
         let resource = PetfinderApiResource<PetfinderOAuthDto>.token()
-        return apiProvider.fetch(resource: resource).eraseToAnyPublisher()
+        return apiProvider.fetch(resource: resource)
+            .map { (response: PetfinderOAuthDto) -> AnyPublisher<PetfinderOAuthDto, ApiError> in
+                guard let expiresIn = response.expiresIn else {
+                    return Fail(error: ApiError.apiError(description: "Invalid expiration time")).eraseToAnyPublisher()
+                }
+
+                let timestamp = Date().timeIntervalSince1970
+                PetfinderApiProviderTokenCache.token = response
+                PetfinderApiProviderTokenCache.timestamp = timestamp + expiresIn * 0.95
+                return Just(response).setFailureType(to: ApiError.self).eraseToAnyPublisher()
+            }
+            .switchToLatest()
+            .receive(on: RunLoop.main)
+            .eraseToAnyPublisher()
     }
 }
 

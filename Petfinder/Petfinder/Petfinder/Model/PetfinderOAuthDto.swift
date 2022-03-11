@@ -9,7 +9,7 @@ import Foundation
 
 public struct PetfinderOAuthDto: Codable {
     let tokenType: String?
-    let expiresIn: Int?
+    let expiresIn: Double?
     let accessToken: String?
 
     enum CodingKeys: String, CodingKey {
