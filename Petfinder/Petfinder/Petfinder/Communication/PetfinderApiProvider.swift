@@ -65,6 +65,13 @@ extension PetfinderApiProvider: ApiProviderType {
                 }
                 resource.headers = ["Authorization": "Bearer \(token)"]
                 return self.apiProvider.fetchData(resource: resource)
+                    .mapError({ error in
+                        // Reset token cache if error
+                        PetfinderApiProviderTokenCache.token = nil
+                        PetfinderApiProviderTokenCache.timestamp = nil
+                        return error
+                    })
+                    .eraseToAnyPublisher()
             }
             .switchToLatest()
             .receive(on: RunLoop.main)
@@ -82,6 +89,13 @@ extension PetfinderApiProvider: ApiProviderType {
                 }
                 resource.headers = ["Authorization": "Bearer \(token)"]
                 return self.apiProvider.fetch(resource: resource)
+                    .mapError({ error in
+                        // Reset token cache if error
+                        PetfinderApiProviderTokenCache.token = nil
+                        PetfinderApiProviderTokenCache.timestamp = nil
+                        return error
+                    })
+                    .eraseToAnyPublisher()
             }
             .switchToLatest()
             .receive(on: RunLoop.main)
