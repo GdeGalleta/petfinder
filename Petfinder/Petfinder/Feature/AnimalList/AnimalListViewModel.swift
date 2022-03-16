@@ -32,7 +32,7 @@ public final class AnimalListViewModel: ViewModelErrorReporter, AnimalListViewMo
 
     private var cancellables = Set<AnyCancellable>()
 
-    private let apiProvider: ApiProviderType
+    private let petfinderAnimalService: PetfinderAnimalServiceType
 
     @Published public var animalTypes: [String] = []
     public var animalTypesPublished: Published<[String]> { _animalTypes }
@@ -54,19 +54,12 @@ public final class AnimalListViewModel: ViewModelErrorReporter, AnimalListViewMo
         return query
     }()
 
-    init(apiProvider: ApiProviderType = PetfinderApiProvider()) {
-        self.apiProvider = apiProvider
+    init(petfinderAnimalService: PetfinderAnimalServiceType = PetfinderAnimalService()) {
+        self.petfinderAnimalService = petfinderAnimalService
     }
 
     public func fetchTypes() {
-        let resource = PetfinderApiResource<PetfinderTypesDto>.types()
-
-        apiProvider
-            .fetch(resource: resource)
-            .compactMap({ (response: PetfinderTypesDto) -> [String] in
-                let factory = AnimalTypeFactory()
-                return factory.decode(dto: response)
-            })
+        petfinderAnimalService.fetchTypes()
             .sink { [weak self] completion in
                 guard let self = self else { return }
                 switch completion {
@@ -83,17 +76,7 @@ public final class AnimalListViewModel: ViewModelErrorReporter, AnimalListViewMo
     }
 
     private func fetchAnimals(query: AnimalsQuery) {
-        let resource = PetfinderApiResource<PetfinderAnimalsDto>.animals(query: query)
-        var hasMoreData = hasDataSourceMoreData
-        apiProvider
-            .fetch(resource: resource)
-            .compactMap({ (response: PetfinderAnimalsDto) -> [AnimalListModel] in
-                // Checking if next page exists
-                hasMoreData = query.page + 1 <= response.pagination?.totalPages ?? 0
-
-                let factory = AnimalListModelFactory()
-                return factory.decode(dto: response)
-            })
+        petfinderAnimalService.fetchAnimals(query: query)
             .sink { [weak self] completion in
                 guard let self = self else { return }
                 switch completion {
@@ -103,7 +86,7 @@ public final class AnimalListViewModel: ViewModelErrorReporter, AnimalListViewMo
                 case .finished:
                     break
                 }
-            } receiveValue: { [weak self] response in
+            } receiveValue: { [weak self] response, hasMoreData in
                 guard let self = self else { return }
                 self.hasDataSourceMoreData = hasMoreData
 

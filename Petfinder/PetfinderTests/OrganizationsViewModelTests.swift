@@ -13,18 +13,21 @@ class OrganizationsViewModelTests: XCTestCase {
 
     private var cancellables: Set<AnyCancellable>!
     private var apiProvider: ApiProviderType?
+    private var petfinderOrganizationService: PetfinderOrganizationServiceType?
     private var viewModel: OrganizationsViewModelType?
 
     override func setUpWithError() throws {
         cancellables = []
         apiProvider = ApiProvider(session: TestsConstants.session)
         URLProtocol.registerClass(URLProtocolMock.self)
+        petfinderOrganizationService = PetfinderOrganizationService(apiProvider: apiProvider!)
 
-        viewModel = OrganizationsViewModel(apiProvider: apiProvider!)
+        viewModel = OrganizationsViewModel(petfinderOrganizationService: petfinderOrganizationService!)
     }
 
     override func tearDownWithError() throws {
         apiProvider = nil
+        petfinderOrganizationService = nil
         viewModel = nil
     }
 

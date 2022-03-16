@@ -25,7 +25,7 @@ public final class OrganizationsViewModel: ViewModelErrorReporter, Organizations
 
     private var cancellables = Set<AnyCancellable>()
 
-    private let apiProvider: ApiProviderType
+    private let petfinderOrganizationService: PetfinderOrganizationServiceType
 
     @Published public var dataSource: [OrganizationModel] = []
     public var dataSourcePublished: Published<[OrganizationModel]> { _dataSource }
@@ -45,22 +45,12 @@ public final class OrganizationsViewModel: ViewModelErrorReporter, Organizations
         return query
     }()
 
-    init(apiProvider: ApiProviderType = PetfinderApiProvider()) {
-        self.apiProvider = apiProvider
+    init(petfinderOrganizationService: PetfinderOrganizationServiceType = PetfinderOrganizationService()) {
+        self.petfinderOrganizationService = petfinderOrganizationService
     }
 
     private func fetchOrganizations(query: OrganizationsQuery) {
-        let resource = PetfinderApiResource<PetfinderOrganizationsDto>.organizations(query: query)
-        var hasMoreData = hasDataSourceMoreData
-        apiProvider
-            .fetch(resource: resource)
-            .compactMap({ (response: PetfinderOrganizationsDto) -> [OrganizationModel] in
-                // Checking if next page exists
-                hasMoreData = query.page + 1 <= response.pagination?.totalPages ?? 0
-
-                let factory = OrganizationModelFactory()
-                return factory.decode(dto: response)
-            })
+        petfinderOrganizationService.fetchOrganizations(query: query)
             .sink { [weak self] completion in
                 guard let self = self else { return }
                 switch completion {
@@ -70,7 +60,7 @@ public final class OrganizationsViewModel: ViewModelErrorReporter, Organizations
                     case .finished:
                         break
                 }
-            } receiveValue: { [weak self] response in
+            } receiveValue: { [weak self] response, hasMoreData in
                 guard let self = self else { return }
                 self.hasDataSourceMoreData = hasMoreData
 
