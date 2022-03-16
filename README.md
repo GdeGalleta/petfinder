@@ -4,7 +4,7 @@ This is an iOS App created using Swift and the [Petfinder API](https://www.petfi
 With this application you can consult a list of animals availables to adopt in New York City. 
 
 <p align="left">
-  <img src="Images/petsfinder_demo.gif" width="250" title="hover text">
+  <img src="Images/petsfinder_demo.gif" width="250">
 </p>
 
 * The main functionalities are: 
