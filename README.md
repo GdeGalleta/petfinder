@@ -21,6 +21,7 @@ With this application you can consult a list of animals availables to adopt in N
 * Xcode >= 13
 * iOS >= 15.0
 * Swift 5
+* UIKit
 
 ## How to install
 * Clone or download the project to your machine
@@ -35,7 +36,7 @@ With this application you can consult a list of animals availables to adopt in N
 
 * MvvM Design Pattern.
 * Library-less App
-* UI developed 100% in code.
+* UIKit UI developed 100% in code.
 * Communication between View and ViewModel is done through the use of Combine.
 * View flow navigation is done by the use of the Coordinator pattern.
 * The ViewModel gets data from the API by using: 
